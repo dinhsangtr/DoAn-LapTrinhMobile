@@ -23,5 +23,5 @@
         app:mbn_countTextColor="@color/white"
         app:mbn_defaultIconColor="@color/white"
         app:mbn_selectedIconColor="#74DCA8" />
-<!--74DCA8-->
+
 </LinearLayout>
