@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.NDDuongActivity">
+
+    <TextView
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:background="#21a725"
+        android:paddingStart="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Thông Tin Dinh Dưỡng"
+        tools:ignore="RtlSymmetry" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/listviewndd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/GreenBackground"
+            android:dividerHeight="1dp" />
+        <LinearLayout
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:id="@+id/linearthongtin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+            <LinearLayout
+                android:background="#1ead42"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:weightSum="8">
+                <TextView
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:gravity="center_vertical"
+                    android:id="@+id/textviewtennddtt"
+                    android:paddingStart="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Vitamin D"
+                    android:layout_weight="7"/>
+                <ImageView
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/imageviewanttt"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/down"
+                    android:layout_weight="1"
+                    android:layout_above="@+id/tam"
+                    android:contentDescription="TODO" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/linearlyaoutbackground"
+                android:background="@drawable/hinhnen1"
+                android:layout_width="match_parent"
+                android:layout_height="340dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:weightSum="3">
+                    <TextView
+                        android:textSize="19sp"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:gravity="center"
+                        android:id="@+id/textviewnguontt"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="Nguồn" android:layout_weight="1"/>
+                    <TextView
+                        android:textSize="19sp"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:gravity="center"
+                        android:id="@+id/textviewloiichtt"
+                        android:background="#fff"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="Lợi ích"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:textSize="19sp"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:gravity="center"
+                        android:id="@+id/textviewlieuluongtt"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="Liều lượng"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+                <TextView
+                    android:textSize="22sp"
+                    android:textStyle="italic"
+                    android:textColor="#000"
+                    android:id="@+id/textviewthongtintt"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:text="Cung cấp axit amin không thay thế, là đơn vị cấu trúc cơ thể, cơ bắp…cung cấp khoảng 20% năng lượng, duy trì một cơ thể khỏe mạnh."/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

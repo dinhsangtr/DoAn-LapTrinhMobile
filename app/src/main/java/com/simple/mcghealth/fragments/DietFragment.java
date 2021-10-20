@@ -11,7 +11,8 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 
 import com.simple.mcghealth.R;
-import com.simple.mcghealth.activities.ThongTinDDActivity;
+import com.simple.mcghealth.activities.NDDuongActivity;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -68,7 +69,7 @@ public class DietFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_diet, container, false);
         ImageButton imgbtnTTDD = view.findViewById(R.id.imgbtnTTDD) ;
         imgbtnTTDD.setOnClickListener(view1 -> {
-            intent = new Intent(getActivity(), ThongTinDDActivity.class);
+            intent = new Intent(getActivity(), NDDuongActivity.class);
             startActivity(intent);
         });
         return view;
