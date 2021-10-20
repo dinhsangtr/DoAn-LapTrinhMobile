@@ -10,12 +10,18 @@
     <string name="chinhsach"> Chính sách người dùng</string>
     <string name="dong_y">Đồng ý</string>
 
+    <!--Đếm bước chân-->
+    <string name="toolbarStep">Bước chân</string>
+
+
+    <!--Nhắc lịch uống thuốc-->
+    <string name="toolbarRemind">Cài đặt nhắc dùng thuốc</string>
+
 
     <!---->
     <string name="cdau">Chế độ ăn uống</string>
     <string name="bmi_c_a_b_n_l">BMI của bạn là :</string>
     <string name="todo">TODO</string>
-
 
 
 </resources>

@@ -6,20 +6,18 @@ import androidx.room.Insert;
 import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
 
-import com.simple.mcghealth.entities.WalkingStep;
+import com.simple.mcghealth.entities.Medicine;
 
 import java.util.List;
 
 @Dao
-public interface WalkingStepDao {
-
+public interface MedicineDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    void insert(WalkingStep walkingStep);
+    void insertMedicine(Medicine medicine);
 
     @Delete
-    void delete(WalkingStep walkingStep);
+    void delete(Medicine medicine);
 
-
-    @Query("SELECT * FROM walking_step ORDER BY date DESC")
-    List<WalkingStep> getAll();
+    @Query("SELECT * FROM medicine ORDER BY name DESC")
+    List<Medicine> getAll();
 }

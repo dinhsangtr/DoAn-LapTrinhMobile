@@ -11,17 +11,19 @@ import com.simple.mcghealth.R;
 import com.simple.mcghealth.utils.MyPreferences;
 
 public class IntroFTActivity extends AppCompatActivity {
-    Intent intent;
     Button btnOK;
     TextView txtPolicy;
+
+    private MyPreferences myPreferences;
+
 
     @Override
     protected void onStart() {
         super.onStart();
-        boolean isFirst = MyPreferences.isFirst(IntroFTActivity.this);
-        if (!isFirst) {
-            intent = new Intent(IntroFTActivity.this, IntroActivity.class);
-            startActivity(intent);
+        myPreferences = new MyPreferences(this);
+
+        if (!myPreferences.isFirstTimeLaunch()) {
+            startActivity(new Intent(this, IntroActivity.class));
             finish();
         }
     }
@@ -36,13 +38,12 @@ public class IntroFTActivity extends AppCompatActivity {
         txtPolicy = findViewById(R.id.txtPolicy);
 
         btnOK.setOnClickListener(view -> {
-            intent = new Intent(this, AboutActivity.class);
-            startActivity(intent);
+            myPreferences.setFirstTimeLaunch(false);
+            startActivity(new Intent(this, AboutActivity.class));
         });
 
         txtPolicy.setOnClickListener(view -> {
-
+            //myPreferences.setFirstTimeLaunch(false);
         });
-
     }
 }

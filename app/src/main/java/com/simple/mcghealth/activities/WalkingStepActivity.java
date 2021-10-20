@@ -1,74 +1,80 @@
 package com.simple.mcghealth.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
-import android.content.ComponentName;
-import android.content.Context;
-import android.content.Intent;
-import android.content.ServiceConnection;
+import android.app.Dialog;
 import android.os.Bundle;
-import android.os.IBinder;
+import android.view.Gravity;
+import android.view.View;
+import android.view.WindowManager;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.simple.mcghealth.R;
-import com.simple.mcghealth.interfaces.UpdateUiCallBack;
-import com.simple.mcghealth.services.StepService;
-import com.simple.mcghealth.utils.CommonUtils;
 
 
 public class WalkingStepActivity extends AppCompatActivity {
-    private boolean mIsBind;
-    TextView txtStep;
+    private TextView txtStepTarget, txtStepCurrent;
+    private ImageView imgViewEditTarget;
+    private Toolbar toolbar;
+
+    private String target = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_walking_step);
 
-        //InitData
-        showStepCount(CommonUtils.getStepNumber(), 0);
+        txtStepCurrent = (TextView) findViewById(R.id.txtStepCurrent);
+        txtStepTarget = (TextView) findViewById(R.id.txtStepTarget);
+        imgViewEditTarget = (ImageView) findViewById(R.id.imgViewEditTarget);
+        toolbar = (Toolbar) findViewById(R.id.toolbarStep);
 
-        //SetupService
-        Intent intent = new Intent(this, StepService.class);
-        mIsBind = bindService(intent, mServiceConnection, Context.BIND_AUTO_CREATE);
-        startService(intent);
-
-
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        if (mIsBind) {
-            unbindService(mServiceConnection);
-        }
-    }
+        ActionToolbar();
+        target = txtStepTarget.getText().toString();
 
 
-    private ServiceConnection mServiceConnection = new ServiceConnection() {
-        @Override
-        public void onServiceConnected(ComponentName componentName, IBinder service) {
-            StepService stepService = ((StepService.StepBinder) service).getService();
-            showStepCount(CommonUtils.getStepNumber(), stepService.getStepCount());
-            stepService.registerCallback(new UpdateUiCallBack() {
-                @Override
-                public void updateUi(int stepCount) {
-                    showStepCount(CommonUtils.getStepNumber(), stepCount);
-                }
+        imgViewEditTarget.setOnClickListener(view -> {
+            Dialog dialog = new Dialog(this);
+            dialog.setContentView(R.layout.dialog_update_target);
+            int width = WindowManager.LayoutParams.MATCH_PARENT;
+            int height = WindowManager.LayoutParams.WRAP_CONTENT;
+            dialog.getWindow().setLayout(width, height);
+            dialog.getWindow().setGravity(Gravity.CENTER);
+            dialog.show();
+
+            EditText editText = dialog.findViewById(R.id.edtTarget);
+            Button btnUpdate = dialog.findViewById(R.id.btnUpdate);
+
+            editText.setText(target);
+
+            btnUpdate.setOnClickListener(view1 -> {
+                String str = editText.getText().toString().trim();
+
+                ///////sql chưa có
+                dialog.dismiss();
+                String txtToast = "Update Successfully!";
+                Toast.makeText(this, txtToast , Toast.LENGTH_LONG).show();
             });
-        }
+        });
 
-        @Override
-        public void onServiceDisconnected(ComponentName componentName) {
-        }
-    };
+    }
 
-    public void showStepCount(int totalStepNum, int currentCounts) {
-        if (currentCounts < totalStepNum) {
-            currentCounts = totalStepNum;
-        }
-        txtStep = findViewById(R.id.text_step);
-        txtStep.setText(String.valueOf(currentCounts));
+    private void ActionToolbar() {
+        toolbar.setTitle(null);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
 
 

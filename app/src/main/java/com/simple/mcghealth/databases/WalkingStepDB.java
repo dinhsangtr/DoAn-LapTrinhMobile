@@ -24,5 +24,5 @@ public abstract class WalkingStepDB extends RoomDatabase {
         return db;
     }
 
-    public abstract WalkingStepDao mainDAO();
+    public abstract WalkingStepDao walkingStepDao();
 }

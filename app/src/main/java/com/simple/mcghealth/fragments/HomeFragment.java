@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.LinearLayout;
 
 import com.simple.mcghealth.R;
 import com.simple.mcghealth.activities.WalkingStepActivity;
@@ -21,7 +22,7 @@ public class HomeFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    Button btn;
+    private LinearLayout lnWalkingStep;
 
 
     public HomeFragment() {
@@ -49,8 +50,8 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
-        btn = view.findViewById(R.id.btn);
-        btn.setOnClickListener(new View.OnClickListener() {
+        lnWalkingStep = (LinearLayout) view.findViewById(R.id.lnWalkingStep);
+        lnWalkingStep.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(), WalkingStepActivity.class);

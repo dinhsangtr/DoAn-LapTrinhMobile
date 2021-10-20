@@ -4,17 +4,72 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".activities.WalkingStepActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarStep"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/toolbar">
+
+        <TextView
+            android:id="@+id/txtToolBarSP_Act"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/toolbarStep"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/muctieu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mục tiêu của bạn: "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtStepTarget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/muctieu"
+            android:text="5000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/txtStepTarget"
+            android:text=" bước"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imgViewEditTarget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp"
+            android:src="@drawable/ic_baseline_edit_24" />
+
+    </RelativeLayout>
 
 
     <TextView
-        android:id="@+id/text_step"
+        android:id="@+id/txtStepCurrent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
         android:gravity="center_horizontal"
         android:text="0"
         android:textColor="@android:color/holo_red_dark"
-        android:textSize="50sp"/>
+        android:textSize="50sp" />
 
 </LinearLayout>

@@ -4,18 +4,30 @@ import android.content.Context;
 import android.content.SharedPreferences;
 
 public class MyPreferences {
-    private static final String SHARED_PREFERENCES_NAME = "first_launch";
+    static SharedPreferences pref;
+    static SharedPreferences.Editor editor;
+
+    private static final String SHARED_PREFERENCES_NAME = "my_pref";
+    private static final String IS_FIRST_TIME_LAUNCH = "is_first_launch";
+
+
+    public MyPreferences(Context context) {
+        pref = context.getSharedPreferences(SHARED_PREFERENCES_NAME, Context.MODE_PRIVATE);
+        editor = pref.edit();
+    }
+
+    //Intro
+    public static void setFirstTimeLaunch(boolean isFirstTime){
+        editor.putBoolean(IS_FIRST_TIME_LAUNCH, isFirstTime);
+        editor.commit();
+    }
+
+    public static boolean isFirstTimeLaunch() {
+        return pref.getBoolean(IS_FIRST_TIME_LAUNCH, true);
+    }
 
     //
-    public static boolean isFirst(Context context) {
-        final SharedPreferences reader = context.getSharedPreferences(SHARED_PREFERENCES_NAME, Context.MODE_PRIVATE);
-        final boolean first = reader.getBoolean("is_first", true);
-        if (first) {
-            final SharedPreferences.Editor editor = reader.edit();
-            editor.putBoolean("is_first", false);
-            editor.apply();
-        }
-        return first;
-    }
+
+
 
 }
