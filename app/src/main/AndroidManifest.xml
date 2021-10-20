@@ -22,6 +22,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MCGHealth">
         <activity
+            android:name=".activities.AddInfoMainActivity"
+            android:exported="true" />
+        <activity
             android:name=".activities.AddMedicineActivity"
             android:exported="true" />
         <activity

@@ -1,15 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".fragments.SettingFragment">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/txtTesst"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarAddDrug"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Setting"
-        android:gravity="center"/>
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/button">
 
-</FrameLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Cài Đặt"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_below="@+id/toolbarAddDrug"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:background="@drawable/custom_practice"
+        android:id="@+id/layout1">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:src="@drawable/m_calendar"
+            android:layout_marginStart="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cài Đặt Cấu Hình"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:layout_weight="6"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_below="@+id/layout1"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:background="@drawable/custom_practice">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:src="@drawable/m_calendar"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lịch Sữ Thay Đổi"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:layout_weight="6"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout3"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_below="@+id/layout2"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:background="@drawable/custom_practice">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:src="@drawable/m_calendar"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thông Tin Ứng Dụng"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:layout_weight="6"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout3"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:background="@drawable/custom_button_color"
+            android:layout_height="60dp"
+            android:text="Mặc Định" />
+    </LinearLayout>
+</RelativeLayout>
+

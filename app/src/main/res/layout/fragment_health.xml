@@ -1,14 +1,197 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".fragments.HealthFragment">
+    android:layout_height="match_parent">
 
-    <TextView
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarAddDrug"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Health"
-        android:gravity="center"/>
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/button">
 
-</FrameLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Tập Luyện"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/BMI"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_below="@+id/toolbarAddDrug"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:background="#EACACA"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <TextView
+
+            android:layout_width="350dp"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="5"
+            android:hint="BMI của bạn là: 22"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_weight="5"
+            android:src="@drawable/logo"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Unit1"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_below="@+id/BMI"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/custom_practice"
+        android:gravity="center"
+        android:weightSum="10">
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:hint="Chạy bộ là một môn thể thao lành mạnh rất tốt cho sức khỏe "
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="100dp"
+            android:layout_weight="3"
+            android:src="@drawable/logo" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_below="@+id/Unit1"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/custom_practice"
+        android:gravity="center"
+        android:weightSum="10"
+        android:id="@+id/Unit2">
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:hint="Chạy bộ là một môn thể thao lành mạnh rất tốt cho sức khỏe "
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="100dp"
+            android:layout_weight="3"
+            android:src="@drawable/logo" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_below="@+id/Unit2"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/custom_practice"
+        android:gravity="center"
+        android:weightSum="10"
+        android:id="@+id/Unit3">
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:hint="Chạy bộ là một môn thể thao lành mạnh rất tốt cho sức khỏe "
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="100dp"
+            android:layout_weight="3"
+            android:src="@drawable/logo" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_below="@+id/Unit3"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/custom_practice"
+        android:gravity="center"
+        android:weightSum="10"
+        android:id="@+id/Unit4">
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:hint="Chạy bộ là một môn thể thao lành mạnh rất tốt cho sức khỏe "
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="100dp"
+            android:layout_weight="3"
+            android:src="@drawable/logo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Unit5"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_below="@+id/Unit4"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/custom_practice"
+        android:gravity="center"
+        android:weightSum="10">
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:hint="Chạy bộ là một môn thể thao lành mạnh rất tốt cho sức khỏe "
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="100dp"
+            android:layout_weight="3"
+            android:src="@drawable/logo" />
+    </LinearLayout>
+</RelativeLayout>
+

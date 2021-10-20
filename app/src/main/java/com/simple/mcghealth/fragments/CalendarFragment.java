@@ -29,12 +29,28 @@ public class CalendarFragment extends Fragment {
     private AppDatabase db;
     private MedicineAdapter adapter;
 
+    private boolean isBackFromB;
+
     public CalendarFragment() {
     }
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        isBackFromB = false;
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        isBackFromB = true;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        if (isBackFromB) updateUI();
     }
 
     @Override
@@ -42,13 +58,18 @@ public class CalendarFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.fragment_calendar, container, false);
-        mappings(view);
+        mappings(view); //init UI
+        updateUI();
+        return view;
+    }
 
+    private void updateUI() {
         db = AppDatabase.getInstance(this.getActivity().getApplicationContext());
         medicineList = db.medicineDao().getAll();
 
         if (medicineList.size() > 0) {
-            empty_view.setVisibility(View.INVISIBLE);
+            empty_view.setVisibility(View.INVISIBLE); //
+
             LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
             recyclerViewSchedule.setLayoutManager(linearLayoutManager);
 
@@ -57,12 +78,8 @@ public class CalendarFragment extends Fragment {
         } else {
             empty_view.setVisibility(View.VISIBLE);
         }
-
         addSchedule.setOnClickListener(view1 -> startActivity(new Intent(getActivity(), AddMedicineActivity.class)));
-
-        return view;
     }
-
 
     private void mappings(View view) {
         addSchedule = (FloatingActionButton) view.findViewById(R.id.addSchedule);

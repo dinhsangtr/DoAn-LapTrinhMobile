@@ -10,6 +10,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.simple.mcghealth.AppDatabase;
@@ -23,6 +24,7 @@ public class MedicineAdapter extends RecyclerView.Adapter<MedicineAdapter.ViewHo
     private List<Medicine> medicineList;
     private Activity context;
     private AppDatabase db;
+    private AlertDialog.Builder builder;
 
     @SuppressLint("NotifyDataSetChanged")
     public void setData(List<Medicine> list) {
@@ -47,15 +49,34 @@ public class MedicineAdapter extends RecyclerView.Adapter<MedicineAdapter.ViewHo
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Medicine medicine = medicineList.get(position);
         db = AppDatabase.getInstance(context);
+        builder = new AlertDialog.Builder(context);
+
 
         holder.txtDrugName.setText(medicine.getName());
         holder.txtNote.setText(medicine.getNote());
 
         holder.setItemClickListener((view, position1, isLongClick) -> {
-            if (isLongClick)
+            if (isLongClick) {
+                builder.setTitle("Thông báo");
+                builder.setMessage("Bạn chắc chắn xóa ?");
+                builder.setCancelable(false);
+                builder.setPositiveButton("Xóa", (dialog, id) -> {
+                    db.medicineDao().delete(medicine);
+                });
+                builder.setNegativeButton("Quay lại", (dialog, id) -> {
+                    dialog.cancel();
+                });
+                //Creating dialog box
+                AlertDialog alert = builder.create();
+                alert.show();
+
+
+
                 Toast.makeText(context, "Long Click: " + medicineList.get(position1), Toast.LENGTH_SHORT).show();
-            else
+            } else {
                 Toast.makeText(context, " " + medicineList.get(position1), Toast.LENGTH_SHORT).show();
+            }
+
         });
     }
 
