@@ -26,9 +26,11 @@
             android:exported="true" />
         <activity
             android:name=".activities.AddMedicineActivity"
+            android:windowSoftInputMode="adjustPan"
             android:exported="true" />
         <activity
             android:name=".activities.SetupReminderActivity"
+            android:windowSoftInputMode="adjustPan"
             android:exported="true" />
         <activity
             android:name=".activities.ThongTinDDActivity"

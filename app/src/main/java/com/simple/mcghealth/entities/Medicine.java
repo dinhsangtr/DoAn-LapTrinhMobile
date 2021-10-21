@@ -1,14 +1,8 @@
 package com.simple.mcghealth.entities;
 
-import androidx.annotation.Nullable;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
-import androidx.room.TypeConverters;
-
-import com.simple.mcghealth.utils.TimeStampConverter;
-
-import java.sql.Date;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -26,22 +20,17 @@ public class Medicine {
     @ColumnInfo(name = "name")
     public String name;
 
-    @Nullable
     @ColumnInfo(name = "image", typeAffinity = ColumnInfo.BLOB)
     public byte[] image;
 
-    @Nullable
     @ColumnInfo(name = "note")
     public String note;
 
-    @Nullable
     @ColumnInfo(name = "from_date")
-    @TypeConverters({TimeStampConverter.class})
-    public Date fromDate;
+    public String fromDate;
 
-    @Nullable
+   // @TypeConverters({TimeStampConverter.class})
     @ColumnInfo(name = "to_date")
-    @TypeConverters({TimeStampConverter.class})
-    public Date toDate;
+    public String toDate;
 
 }

@@ -34,7 +34,6 @@ public class CalendarFragment extends Fragment {
     public CalendarFragment() {
     }
 
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,9 +63,9 @@ public class CalendarFragment extends Fragment {
     }
 
     private void updateUI() {
-        db = AppDatabase.getInstance(this.getActivity().getApplicationContext());
-        medicineList = db.medicineDao().getAll();
-
+        db = AppDatabase.getInstance(getActivity().getApplicationContext());
+        medicineList = db.medicineDao().getAllMedicines();
+        //db.medicationTimeDao().getData().size();
         if (medicineList.size() > 0) {
             empty_view.setVisibility(View.INVISIBLE); //
 

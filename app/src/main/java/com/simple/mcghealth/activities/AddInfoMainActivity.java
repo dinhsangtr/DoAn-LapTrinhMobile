@@ -1,8 +1,10 @@
 package com.simple.mcghealth.activities;
 
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Bundle;
+import com.simple.mcghealth.R;
 
 public class AddInfoMainActivity extends AppCompatActivity {
 
