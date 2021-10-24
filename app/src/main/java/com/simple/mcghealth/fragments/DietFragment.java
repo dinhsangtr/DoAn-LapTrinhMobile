@@ -12,6 +12,7 @@ import android.widget.ImageButton;
 
 import com.simple.mcghealth.R;
 import com.simple.mcghealth.activities.NDDuongActivity;
+import com.simple.mcghealth.activities.ThucDonActivity;
 
 
 /**
@@ -68,8 +69,13 @@ public class DietFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_diet, container, false);
         ImageButton imgbtnTTDD = view.findViewById(R.id.imgbtnTTDD) ;
+        ImageButton imgbtnThucDon = view.findViewById(R.id.btnThucDon) ;
         imgbtnTTDD.setOnClickListener(view1 -> {
             intent = new Intent(getActivity(), NDDuongActivity.class);
+            startActivity(intent);
+        });
+        imgbtnThucDon.setOnClickListener(view1 -> {
+            intent = new Intent(getActivity(), ThucDonActivity.class);
             startActivity(intent);
         });
         return view;

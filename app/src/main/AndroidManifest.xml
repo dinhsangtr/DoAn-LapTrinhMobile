@@ -39,6 +39,41 @@
         <activity
             android:name=".activities.WalkingStepActivity"
             android:exported="true" />
+        <activity
+            android:name=".activities.ThucDonChiTietBeoPhiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ThucDonChiTietTieuDuongActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ThucDonChiTietNoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ThucDonChiTietGiamActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ThucDon7NgayActivity"
+            android:exported="false" android:screenOrientation="landscape"/>
+        <activity
+            android:name=".activities.ThucDon7NgayGiamCanActivity"
+            android:exported="false" android:screenOrientation="landscape" />
+        <activity
+            android:name=".activities.ThucDon7NgayNoActivity"
+            android:exported="false" android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activities.ThucDonChiTietActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.DocbaoActivity"
+            android:exported="false" android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".activities.ListBaiVietActivity"
+            />
+
+        <activity
+
+            android:name=".activities.ThucDonActivity"
+            android:exported="true" android:screenOrientation="portrait" />
         <activity android:name=".activities.AboutActivity" />
         <activity android:name=".activities.MainActivity" />
         <activity android:name=".activities.IntroActivity" />

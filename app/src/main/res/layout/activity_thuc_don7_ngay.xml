@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt"
+    android:orientation="vertical"
+    android:background="#E4ACED"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:weightSum="6">
+
+        <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="#000" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="Chế độ tăng cân" android:layout_weight="1"/>
+        <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="#000" android:gravity="center" android:background="#fff" android:layout_width="0dp" android:layout_height="match_parent" android:text="Bữa Sáng" android:layout_weight="1"/>
+        <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="#000" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="Bữa Trưa" android:layout_weight="1"/>
+        <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="#000" android:gravity="center" android:background="#fff" android:layout_width="0dp" android:layout_height="match_parent" android:text="Bữa Phụ 1" android:layout_weight="1"/>
+        <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="#000" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="Bữa Tối" android:layout_weight="1"/>
+        <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="#000" android:gravity="center" android:background="#fff" android:layout_width="0dp" android:layout_height="match_parent" android:text="Bữa Phụ 2" android:layout_weight="1"/>
+    </LinearLayout>
+    <ScrollView android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="21">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="6" android:layout_weight="3">
+                <TextView android:textSize="11sp" android:textStyle="bold" android:textColor="#000" android:gravity="center" android:background="#fff" android:layout_width="0dp" android:layout_height="match_parent" android:text="Ngày 1" android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="1 tô phở bò\101 quả trứng gà\101 ly sữa. " android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:background="#fff" android:layout_width="0dp" android:layout_height="match_parent" android:text="2 bát cơm\101 bát canh bí đỏ thịt hầm\10100g thịt bò xào cần\101 quả chuối " android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="1 đĩa trái cây" android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:background="#fff" android:layout_width="0dp" android:layout_height="match_parent" android:text="2 bát cơm \10Đậu phụ nhồi thịt\101 bát canh mồng tơi \10Nước ép hoa quả " android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="1 cốc sinh tố" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="6" android:layout_weight="3">
+                <TextView android:textSize="11sp" android:textStyle="bold" android:textColor="#000" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="Ngày 2" android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:background="#fff" android:layout_width="0dp" android:layout_height="match_parent" android:text="Bánh cuốn thịt\101 ly chanh mật ong " android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="2 bát cơm\10100g thịt kho tàu\101 bát canh rau củ\101 quả ổi " android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:background="#fff" android:layout_width="0dp" android:layout_height="match_parent" android:text="1 cốc nước ép trái cây" android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="2 bát cơm\10Cá sốt cà\101 bát canh mồng tơi nấu cua\101 hộp sữa chua " android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:background="#fff" android:layout_width="0dp" android:layout_height="match_parent" android:text="1 bát súp gà" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="6" android:layout_weight="3">
+                <TextView android:textSize="11sp" android:textStyle="bold" android:textColor="#000" android:gravity="center" android:background="#fff" android:layout_width="0dp" android:layout_height="match_parent" android:text="Ngày 3" android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="1 tô búa cá\101 ly sữa\102 trái chuối " android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:background="#fff" android:layout_width="0dp" android:layout_height="match_parent" android:text="2 bát cơm\101 bát canh củ hầm xương\10Cá thu chiên\101 đĩa trái cây " android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="1 ly ngũ cốc dinh dưỡng" android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:background="#fff" android:layout_width="0dp" android:layout_height="match_parent" android:text="2 bát cơm\10Cá lóc kho tộ\101 bát canh rau dền nấu tôm\10đậu que xào " android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="1 ly chè đậu xanh" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="6" android:layout_weight="3">
+                <TextView android:textSize="11sp" android:textStyle="bold" android:textColor="#000" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="Ngày 4" android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:background="#fff" android:layout_width="0dp" android:layout_height="match_parent" android:text="1 đĩa cơm tấm sườn\101 ly sữa tươi " android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="2 bát cơm\101 canh chua thịt băm\10100g thịt kho tàu với trứng\101 quả táo " android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:background="#fff" android:layout_width="0dp" android:layout_height="match_parent" android:text="1 ly nước cam ép" android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="2 bát cơm\10100g thịt bò xào\101 bát canh bí xanh với xương gà\101 hộp sữa chưa " android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:background="#fff" android:layout_width="0dp" android:layout_height="match_parent" android:text="1 ly chè đỗ đen" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="6" android:layout_weight="3">
+                <TextView android:textSize="11sp" android:textStyle="bold" android:textColor="#000" android:gravity="center" android:background="#fff" android:layout_width="0dp" android:layout_height="match_parent" android:text="Ngày 5" android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="1 bánh mỳ kẹp trứng\101 ly sữa\102 quả chuối " android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:background="#fff" android:layout_width="0dp" android:layout_height="match_parent" android:text="2 bát cơm\101 bát canh bí đỏ thịt hầm\10100g thịt bò xào cần\101 quả chuối " android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="1 bát cháo trai" android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:background="#fff" android:layout_width="0dp" android:layout_height="match_parent" android:text="Mỳ xào thịt bò\10rau cải luộc\101 ly ngủ cốc " android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="1 cốc sinh tố nho" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="6" android:layout_weight="3">
+                <TextView android:textSize="11sp" android:textStyle="bold" android:textColor="#000" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="Ngày 6" android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:background="#fff" android:layout_width="0dp" android:layout_height="match_parent" android:text="1 phần bò bít tết\101 ly sữa " android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="2 bát cơm\101 bát canh bắp cải\10Cá diêu hồng chiên\102 quả chuối " android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:background="#fff" android:layout_width="0dp" android:layout_height="match_parent" android:text="1 bánh bông lan" android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="2 bát cơm\10Đuôi bò hầm tiêu\101 bát canh chua\10Đĩa dâu tây " android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:background="#fff" android:layout_width="0dp" android:layout_height="match_parent" android:text="1 ly chè thập cẩm" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="6" android:layout_weight="3">
+                <TextView android:textSize="11sp" android:textStyle="bold" android:textColor="#000" android:gravity="center" android:background="#fff" android:layout_width="0dp" android:layout_height="match_parent" android:text="Ngày 7" android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="1 tô bún riêu\101 ly sữa tươi\102 quả chuối " android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:background="#fff" android:layout_width="0dp" android:layout_height="match_parent" android:text="2 bát cơm\10100g thịt heo luộc\10Nấm xào thịt\10Canh rau ngot\101 hộp sữa chua " android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="1 bắp ngô luộc" android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:background="#fff" android:layout_width="0dp" android:layout_height="match_parent" android:text="2 bát cơm\10Mực chiên\10Canh cá thác lác với cải\10100g nho " android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="1 đĩa trái cây sấy khô" android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

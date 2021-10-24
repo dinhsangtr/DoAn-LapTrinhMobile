@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/custom_othucdon" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="30dp" android:weightSum="6">
+        <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="#000" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="Chế độ giảm cân" android:layout_weight="1"/>
+        <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="#000" android:gravity="center" android:background="#fff" android:layout_width="0dp" android:layout_height="match_parent" android:text="Bữa Sáng" android:layout_weight="1"/>
+        <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="#000" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="Bữa Trưa" android:layout_weight="1"/>
+        <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="#000" android:gravity="center" android:background="#fff" android:layout_width="0dp" android:layout_height="match_parent" android:text="Bữa Phụ 1" android:layout_weight="1"/>
+        <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="#000" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="Bữa Tối" android:layout_weight="1"/>
+        <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="#000" android:gravity="center" android:background="#fff" android:layout_width="0dp" android:layout_height="match_parent" android:text="Bữa Phụ 2" android:layout_weight="1"/>
+    </LinearLayout>
+    <ScrollView android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="70dp" android:weightSum="6">
+                <TextView android:textSize="11sp" android:textStyle="bold" android:textColor="#000" android:gravity="center" android:background="#fff" android:layout_width="0dp" android:layout_height="match_parent" android:text="Ngày 1" android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="Thịt hun khói\10Cà chua bi (rửa sạch ăn sống) " android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:background="#fff" android:layout_width="0dp" android:layout_height="match_parent" android:text="Cá basa áp chảo\10Súp lơ xanh hấp. " android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="1 miếng phomai con bò cười - lý sữa nguyên kem không đường." android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:background="#fff" android:layout_width="0dp" android:layout_height="match_parent" android:text="Thịt ức gà rang (chứa ít chất béo, hổ trợ tình trạng thèm ăn, giảm cân hiệu quả) " android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="Rau cải chip xào nấm" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="70dp" android:weightSum="6">
+                <TextView android:textSize="11sp" android:textStyle="bold" android:textColor="#000" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="Ngày 2" android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:background="#fff" android:layout_width="0dp" android:layout_height="match_parent" android:text="Trứng gà tráng thịt băm phomai mozzarella. " android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="Thịt bò băm viên, salad dưa chuột cà chua bi." android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:background="#fff" android:layout_width="0dp" android:layout_height="match_parent" android:text="Sữa gạo lức không đường" android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="Cá hồi áp chảo sốt bơ" android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:background="#fff" android:layout_width="0dp" android:layout_height="match_parent" android:text="Măng tây hấp" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="70dp" android:weightSum="6">
+                <TextView android:textSize="11sp" android:textStyle="bold" android:textColor="#000" android:gravity="center" android:background="#fff" android:layout_width="0dp" android:layout_height="match_parent" android:text="Ngày 3" android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="Salad tôm.\10Sữa gạo lức không đường. " android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:background="#fff" android:layout_width="0dp" android:layout_height="match_parent" android:text="Cá thịt trắng.\10Trứng gà rang, rau bắp cải xào." android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="Sữa không đường lắc bơ đậu phộng và nước cốt dừa." android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:background="#fff" android:layout_width="0dp" android:layout_height="match_parent" android:text="Bít tết bò.\10Trứng ốp la." android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="1 trái dưa chuột" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="70dp" android:weightSum="6">
+                <TextView android:textSize="11sp" android:textStyle="bold" android:textColor="#000" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="Ngày 4" android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:background="#fff" android:layout_width="0dp" android:layout_height="match_parent" android:text="Xúc xích hun khói, trứng " android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="Bắp bò xào (luộc) Salad ceasar " android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:background="#fff" android:layout_width="0dp" android:layout_height="match_parent" android:text="Quả bơ dầm sữa chua không đường và nước cốt dừa " android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="Tôm hấp" android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:background="#fff" android:layout_width="0dp" android:layout_height="match_parent" android:text="Đậu đũa xào" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="70dp" android:weightSum="6">
+                <TextView android:textSize="11sp" android:textStyle="bold" android:textColor="#000" android:gravity="center" android:background="#fff" android:layout_width="0dp" android:layout_height="match_parent" android:text="Ngày 5" android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="Trứng vịt lộn, dưa chuột." android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:background="#fff" android:layout_width="0dp" android:layout_height="match_parent" android:text="Bò sốt nấm, súp lơ xanh hấp." android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="2 quả ổi " android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:background="#fff" android:layout_width="0dp" android:layout_height="match_parent" android:text="Ức gà nướng" android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="Salad củ quả" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="70dp" android:weightSum="6">
+                <TextView android:textSize="11sp" android:textStyle="bold" android:textColor="#000" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="Ngày 6" android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:background="#fff" android:layout_width="0dp" android:layout_height="match_parent" android:text="Thịt hun khói\10Cà chua bi (rửa sạch ăn sống) " android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="Thịt lợn xây nấu cà chua\10Đậu bắp luộc" android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:background="#fff" android:layout_width="0dp" android:layout_height="match_parent" android:text="2 quả trứng gà ta rán" android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="Cá trắng rim tiêu" android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:background="#fff" android:layout_width="0dp" android:layout_height="match_parent" android:text="Rau cải chíp xào nấm" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="70dp" android:weightSum="6">
+                <TextView android:textSize="11sp" android:textStyle="bold" android:textColor="#000" android:gravity="center" android:background="#fff" android:layout_width="0dp" android:layout_height="match_parent" android:text="Ngày 7" android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="Trứng tráng thịt băm phomai mozzarella" android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:background="#fff" android:layout_width="0dp" android:layout_height="match_parent" android:text="Bò xào đậu, củ cải + cà rốt luộc" android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="Sữa gạo lứt không đường." android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:background="#fff" android:layout_width="0dp" android:layout_height="match_parent" android:text="Cá ngừ sốt nấm." android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:textColor="#000" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="Rau bắp cải xào" android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
