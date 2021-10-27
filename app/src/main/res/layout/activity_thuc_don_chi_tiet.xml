@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt"
+    android:orientation="vertical"
+    android:background="#dfdfd3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:id="@+id/textviewtenchedo"
+        android:background="#21a725"
+        android:paddingStart="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Chế độ ăn tăng cân"/>
+
+    <ScrollView
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="16sp"
+                    android:textStyle="italic"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/custom_onguyenta"
+                    android:padding="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="Cung cấp đủ Calo: Nạp lượng calo nhiều hơn lượng calo tiêu thụ hằng ngày."/>
+                <TextView
+                    android:textSize="16sp"
+                    android:textStyle="italic"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/custom_onguyenta"
+                    android:padding="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="  Ăn đủ chất:  Đảm bảo có đủ 4 loại chất cơ bản gồm đạm, tinh bột, chất béo, vitamin và chất khoáng.\10  Ăn thực phẩm giàu protein đầu tiên và ăn rau cuối cùng.\10  Sử dụng các sản phẩm sữa vẫn còn nguyên chất báo như: Sữa, kem, pho mát, sữa chua. "/>
+                <TextView
+                    android:textSize="16sp"
+                    android:textStyle="italic"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/custom_onguyenta"
+                    android:padding="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="  Ăn đủ bữa: chia nhỏ bữa ăn thành nhiều lần trong ngày vừa chung cấp năng lượng lien tục vừa giúp e người gầy khong bị cảm giác chán ăn vì phải ăn nhiều. Chế độ ăn hiệu quả nhất là 5 bữa gồm: 3 bữa chính và 2 bữa phụ.  Các bữa ăn trong ngày phải cách điều nhau. Nên ăn cách 4 tiếng 1 bữa."/>
+                <TextView
+                    android:textSize="16sp"
+                    android:textStyle="italic"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/custom_onguyenta"
+                    android:padding="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="  3 bữa chính : Bữa sáng, bữa trưa, bữa tối.\10  Bữa sáng: bữa ăn vô cùng quan trọng không thể bỏ qua, ăn đầy đủ chất như trứng, sữa, bánh mỳ, miến…\10  Bữa trưa: ăn cơm với các thực phẩm như thịt, cá, canh để nạp đủ chất,  cùng với đó hãy bổ sung thêm thực phẩm có chứa nhiều vitamin như trái cây, nước ép, sinh tố… "/>
+                <TextView
+                    android:textSize="16sp"
+                    android:textStyle="italic"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/custom_onguyenta"
+                    android:padding="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="  Bữa tối: đây là bữa chính cuối cùng nên vẫn phải đáp ứng đủ 4 chất. Tuy nhiên không nên ăn quá no, nạp ít năng lượng hơn để tránh bị đầy bụng, khó tiêu. Bạn nên ăn các loại thực phẩm hỗ trợ tiêu hóa như cháo, ngũ cốc, sữa,…\10  2 bữa phụ 2 khung giờ: 3 giờ chiều và 9 giờ tối nên ăn nhẹ các loại sinh tố, hoa quả, sữa chua,… "/>
+                <LinearLayout
+                    android:padding="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:weightSum="2">
+
+                    <Button
+                        android:textColor="@color/black"
+                        android:layout_gravity="center"
+                        android:id="@+id/buttongoiythucdon"
+                        android:background="@drawable/custom_goiythucdon"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginBottom="20dp"
+                        android:text="Gợi Ý Thực Đơn 7 Ngày"
+                        android:layout_weight="1"
+                        android:textAllCaps="false"/>
+
+                    <Button
+                        android:textColor="@color/black"
+                        android:layout_gravity="center"
+                        android:id="@+id/buttonthamkhaothucdon"
+                        android:background="@drawable/custom_goiythucdon"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="20dp"
+                        android:text="Tham khảo thực đơn"
+                        android:layout_weight="1"
+                        android:textAllCaps="false"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

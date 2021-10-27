@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.simple.mcghealth.R;
 
+import com.simple.mcghealth.R;
+
 public class AddInfoMainActivity extends AppCompatActivity {
 
     @Override

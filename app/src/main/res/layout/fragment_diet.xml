@@ -110,6 +110,7 @@
                 android:layout_gravity="center"
                 android:background="#EF9A9A"
                 android:scaleType="fitCenter"
+                android:id="@+id/btnThucDon"
                 android:src="@drawable/logo">
 
             </ImageButton>
