@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarAddDrug3"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/main">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Giới Thiệu"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/toolbarAddDrug3"
+        android:src="@drawable/logo"
+        android:id="@+id/image1"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image1"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:text="Chạy bộ là môn thể thao được rất nhiều người luyện tập, nhưng không phải ai cũng biết hết những lợi ích quý hơn vàng mà thói quen tập chạy buổi sáng mang lại. Không chỉ giúp cho bạn có được một sức khỏe bền bỉ, một vóc dáng cân đối mà còn đẩy lùi một số chứng bệnh, có được tinh thần thoải mái và năng lượng tràn đầy trước khi bắt đầu một ngày mới. Dưới đây là 7 tác dụng của chạy bộ buổi sáng."
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:background="#F4EFEF"/>
+</RelativeLayout>
