@@ -53,40 +53,43 @@
             android:name=".activities.WalkingStepActivity"
             android:exported="true" />
         <activity
-            android:name=".activities.ThucDonChiTietBeoPhiActivity"
+            android:name=".activities.diet.ThucDonChiTietBeoPhiActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.ThucDonChiTietTieuDuongActivity"
+            android:name=".activities.diet.ThucDonChiTietTieuDuongActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.ThucDonChiTietNoActivity"
+            android:name=".activities.diet.ThucDonChiTietNoActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.ThucDonChiTietGiamActivity"
+            android:name=".activities.diet.ThucDonChiTietGiamActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.ThucDon7NgayActivity"
-            android:exported="false" android:screenOrientation="landscape"/>
+            android:name=".activities.diet.ThucDon7NgayActivity"
+            android:exported="false"
+            android:screenOrientation="landscape" />
         <activity
-            android:name=".activities.ThucDon7NgayGiamCanActivity"
-            android:exported="false" android:screenOrientation="landscape" />
+            android:name=".activities.diet.ThucDon7NgayGiamCanActivity"
+            android:exported="false"
+            android:screenOrientation="landscape" />
         <activity
-            android:name=".activities.ThucDon7NgayNoActivity"
-            android:exported="false" android:screenOrientation="portrait"/>
+            android:name=".activities.diet.ThucDon7NgayNoActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
-            android:name=".activities.ThucDonChiTietActivity"
+            android:name=".activities.diet.ThucDonChiTietActivity"
             android:exported="false" />
         <activity
             android:name=".activities.DocbaoActivity"
-            android:exported="false" android:screenOrientation="fullSensor" />
-        <activity
-            android:name=".activities.ListBaiVietActivity"
-            />
+            android:exported="false"
+            android:screenOrientation="fullSensor" />
+        <activity android:name=".activities.ListBaiVietActivity" />
 
         <activity
 
-            android:name=".activities.ThucDonActivity"
-            android:exported="true" android:screenOrientation="portrait" />
+            android:name=".activities.diet.ThucDonActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
         <activity android:name=".activities.AboutActivity" />
         <activity android:name=".activities.MainActivity" />
         <activity android:name=".activities.IntroActivity" />

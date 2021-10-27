@@ -1,4 +1,4 @@
-package com.simple.mcghealth.activities;
+package com.simple.mcghealth.activities.diet;
 
 
 import android.content.Intent;

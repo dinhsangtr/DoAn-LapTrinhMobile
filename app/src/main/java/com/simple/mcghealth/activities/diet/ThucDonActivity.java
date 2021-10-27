@@ -1,4 +1,4 @@
-package com.simple.mcghealth.activities;
+package com.simple.mcghealth.activities.diet;
 
 
 import android.content.Intent;
@@ -53,7 +53,7 @@ public class ThucDonActivity extends AppCompatActivity {
         this.txtTieuDuong.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 ThucDonActivity thucDonActivity = ThucDonActivity.this;
-                thucDonActivity.startActivity(new Intent(thucDonActivity, com.simple.mcghealth.activities.ThucDonChiTietTieuDuongActivity.class));
+                thucDonActivity.startActivity(new Intent(thucDonActivity, ThucDonChiTietTieuDuongActivity.class));
             }
         });
     }

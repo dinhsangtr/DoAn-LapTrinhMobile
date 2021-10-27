@@ -7,7 +7,7 @@
         android:id="@+id/toolbarAddDrug"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/button">
+        android:background="@color/main">
 
         <TextView
             android:layout_width="wrap_content"
