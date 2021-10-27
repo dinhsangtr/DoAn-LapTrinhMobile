@@ -7,16 +7,19 @@ import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
 import com.simple.mcghealth.dao.MedicineDao;
+import com.simple.mcghealth.dao.UserDAO;
 import com.simple.mcghealth.dao.WalkingStepDao;
 import com.simple.mcghealth.entities.Medicine;
+import com.simple.mcghealth.entities.User;
 import com.simple.mcghealth.entities.WalkingStep;
 
-@Database(entities = {Medicine.class, WalkingStep.class}, version = 1, exportSchema = true)
+@Database(entities = {Medicine.class, WalkingStep.class, User.class}, version = 1, exportSchema = true)
 public abstract class AppDatabase extends RoomDatabase {
     private static final String DATABASE_NAME = "database.db";
 
     public abstract MedicineDao medicineDao();
     public abstract WalkingStepDao walkingStepDao();
+    public  abstract UserDAO userDao();
     //
 
 

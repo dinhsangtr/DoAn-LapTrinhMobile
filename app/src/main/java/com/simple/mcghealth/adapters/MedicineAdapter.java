@@ -50,11 +50,8 @@ public class MedicineAdapter extends RecyclerView.Adapter<MedicineAdapter.ViewHo
         Medicine medicine = medicineList.get(position);
         db = AppDatabase.getInstance(context);
         builder = new AlertDialog.Builder(context);
-
-
         holder.txtDrugName.setText(medicine.getName());
         holder.txtNote.setText(medicine.getNote());
-
         holder.setItemClickListener((view, position1, isLongClick) -> {
             if (isLongClick) {
                 builder.setTitle("Thông báo");

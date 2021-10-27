@@ -27,7 +27,8 @@
         android:weightSum="7"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="320dp">
+        tools:layout_editor_absoluteY="320dp"
+        >
 
         <TextView
             android:id="@+id/textview1"
@@ -120,7 +121,8 @@
             android:textAllCaps="false"
             android:textColor="@color/black"
             android:textSize="17sp"
-            app:backgroundTint="@null" />
+            app:backgroundTint="@null"
+            android:id="@+id/btncontinue"/>
 
     </LinearLayout>
 
