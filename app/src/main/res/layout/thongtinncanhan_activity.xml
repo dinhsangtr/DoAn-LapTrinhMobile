@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -15,6 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="35sp"
+            android:id="@+id/txtTenNguoiDung"
             android:gravity="center"
             android:text="Trương Đình Sang">
 
@@ -51,7 +53,7 @@
 
 
         <EditText
-            android:id="@+id/editTextTextPersonName2"
+            android:id="@+id/txtBirthday"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -59,23 +61,25 @@
             android:text="Tuổi : " />
 
         <EditText
-            android:id="@+id/editTextTextPersonName3"
+            android:id="@+id/txtHeight"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Chiều Cao : " />
+            android:text="Chiều Cao : "
+            tools:ignore="TextFields" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName4"
+            android:id="@+id/txtWeight"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Cân Nặng : " />
+            android:text="Cân Nặng : "
+            tools:ignore="TextFields" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName6"
+            android:id="@+id/txtBMI"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -106,7 +110,7 @@
         </LinearLayout>
 
         <EditText
-            android:id="@+id/editTextTextPersonName7"
+            android:id="@+id/txtHuyetAp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -114,7 +118,7 @@
             android:text="Huyết áp : " />
 
         <EditText
-            android:id="@+id/editTextTextPersonName8"
+            android:id="@+id/txtNhipTim"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -122,7 +126,7 @@
             android:text="Nhịp tim : " />
 
         <EditText
-            android:id="@+id/editTextTextPersonName9"
+            android:id="@+id/txtSP02"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -130,14 +134,14 @@
             android:text="SP02 : " />
 
         <EditText
-            android:id="@+id/editTextTextPersonName10"
+            android:id="@+id/txtThongtinbenh"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
             android:text="Thông tin bệnh : " />
         <EditText
-            android:id="@+id/editTextTextPersonName11"
+            android:id="@+id/txtTieuSu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -153,7 +157,7 @@
 
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btnEdit"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:text="Chỉnh sửa"

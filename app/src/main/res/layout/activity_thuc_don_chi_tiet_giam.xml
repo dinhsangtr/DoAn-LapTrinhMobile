@@ -29,7 +29,7 @@
                 <TextView
                     android:textSize="16sp"
                     android:textStyle="italic"
-                    android:textColor="#fff"
+                    android:textColor="@color/black"
                     android:gravity="center_vertical"
                     android:background="@drawable/custom_onguyenta"
                     android:padding="6dp"
@@ -42,7 +42,7 @@
                 <TextView
                     android:textSize="16sp"
                     android:textStyle="italic"
-                    android:textColor="#fff"
+                    android:textColor="@color/black"
                     android:gravity="center_vertical"
                     android:background="@drawable/custom_onguyenta"
                     android:padding="6dp"
@@ -55,7 +55,7 @@
                 <TextView
                     android:textSize="16sp"
                     android:textStyle="italic"
-                    android:textColor="#fff"
+                    android:textColor="@color/black"
                     android:gravity="center_vertical"
                     android:background="@drawable/custom_onguyenta"
                     android:padding="6dp"
@@ -68,7 +68,7 @@
                 <TextView
                     android:textSize="16sp"
                     android:textStyle="italic"
-                    android:textColor="#fff"
+                    android:textColor="@color/black"
                     android:gravity="center_vertical"
                     android:background="@drawable/custom_onguyenta"
                     android:padding="6dp"
@@ -81,7 +81,7 @@
                 <TextView
                     android:textSize="16sp"
                     android:textStyle="italic"
-                    android:textColor="#fff"
+                    android:textColor="@color/black"
                     android:gravity="center_vertical"
                     android:background="@drawable/custom_onguyenta"
                     android:padding="6dp"
@@ -94,7 +94,7 @@
                 <TextView
                     android:textSize="16sp"
                     android:textStyle="italic"
-                    android:textColor="#fff"
+                    android:textColor="@color/black"
                     android:gravity="center_vertical"
                     android:background="@drawable/custom_onguyenta"
                     android:padding="6dp"
@@ -107,7 +107,7 @@
                 <TextView
                     android:textSize="16sp"
                     android:textStyle="italic"
-                    android:textColor="#fff"
+                    android:textColor="@color/black"
                     android:gravity="center_vertical"
                     android:background="@drawable/custom_onguyenta"
                     android:padding="6dp"
@@ -120,7 +120,7 @@
                 <TextView
                     android:textSize="16sp"
                     android:textStyle="italic"
-                    android:textColor="#fff"
+                    android:textColor="@color/black"
                     :gravity="center_vertical"
                     android:background="@drawable/custom_onguyenta"
                     android:padding="6dp"
@@ -136,7 +136,7 @@
                     android:layout_height="80dp"
                     android:weightSum="2">
                     <Button
-                        android:textColor="#fff"
+                        android:textColor="@color/black"
                         android:layout_gravity="center"
                         android:id="@+id/buttongoiythucdon"
                         android:background="@drawable/custom_goiythucdon"
@@ -151,7 +151,7 @@
                         android:layout_weight="1"
                         android:textAllCaps="false"/>
                     <Button
-                        android:textColor="#fff"
+                        android:textColor="@color/black"
                         android:layout_gravity="center"
                         android:id="@+id/buttonthamkhaothucdon"
                         android:background="@drawable/custom_goiythucdon"
