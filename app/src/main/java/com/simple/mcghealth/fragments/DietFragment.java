@@ -2,13 +2,12 @@ package com.simple.mcghealth.fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
+import android.widget.ImageView;
+
+import androidx.fragment.app.Fragment;
 
 import com.simple.mcghealth.R;
 import com.simple.mcghealth.activities.NDDuongActivity;
@@ -68,8 +67,11 @@ public class DietFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_diet, container, false);
-        ImageButton imgbtnTTDD = view.findViewById(R.id.imgbtnTTDD) ;
+
+        ImageView imgbtnTTDD = view.findViewById(R.id.imgbtnTTDD) ;
+       
         ImageButton imgbtnThucDon = view.findViewById(R.id.btnThucDon) ;
+
         imgbtnTTDD.setOnClickListener(view1 -> {
             intent = new Intent(getActivity(), NDDuongActivity.class);
             startActivity(intent);

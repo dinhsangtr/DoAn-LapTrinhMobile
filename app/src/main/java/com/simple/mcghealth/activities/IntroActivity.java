@@ -1,12 +1,12 @@
 package com.simple.mcghealth.activities;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.simple.mcghealth.R;
 
@@ -28,16 +28,16 @@ public class IntroActivity extends AppCompatActivity {
 
     @SuppressLint("SetTextI18n")
     private void startProgress() {
-        for (counter = 0; counter <= 100; counter++) {
+        for (counter = 0; counter < 100; counter++) {
             try {
-                Thread.sleep(25);
+                Thread.sleep(15);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
 
             handler.post(() -> textView.setText(String.valueOf(counter) + "%"));
 
-            if (counter == 100){
+            if (counter == 99){
                 Intent intent = new Intent(IntroActivity.this, MainActivity.class);
                 startActivity(intent);
             }

@@ -1,12 +1,10 @@
 <resources>
     <string name="app_name">MCG Health</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
     <!--Intro first time-->
     <string name="greeting">CHÀO MỪNG ĐẾN VỚI\nMCG HEALTH</string>
     <string name="logo">logo</string>
-    <string name="introTT">Để tiếp tục,\nhãy đồng ý với </string>
     <string name="chinhsach"> Chính sách người dùng</string>
     <string name="dong_y">Đồng ý</string>
 
@@ -20,8 +18,9 @@
 
     <!---->
     <string name="cdau">Chế độ ăn uống</string>
-    <string name="bmi_c_a_b_n_l">BMI của bạn là :</string>
-    <string name="todo">TODO</string>
+    <string name="bmi_c_a_b_n_l">BMI của bạn là:</string>
 
 
+    <string name="channel_name">Nhắc lịch uống thuốc</string>
+    <string name="channel_description">Description</string>
 </resources>

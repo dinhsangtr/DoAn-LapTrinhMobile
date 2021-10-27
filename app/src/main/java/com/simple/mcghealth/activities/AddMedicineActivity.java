@@ -60,12 +60,15 @@ public class AddMedicineActivity extends AppCompatActivity {
             String drugName = edtDrugName.getText().toString().trim();
             String note = edtNote.getText().toString().trim();
 
-            if (!TextUtils.isEmpty(drugName)){
+            if (TextUtils.isEmpty(drugName)){
+                edtDrugName.setError("Tên thuốc không để trống!");
+            }else{
                 BitmapDrawable bitmapDrawable = (BitmapDrawable) imgReview.getDrawable();
                 Bitmap bitmap = bitmapDrawable.getBitmap();
                 ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
                 bitmap.compress(Bitmap.CompressFormat.PNG, 100, byteArrayOutputStream);
                 byte[] image = byteArrayOutputStream.toByteArray();
+                image = CommonUtils.imagemTratada(image);
 
                 db = AppDatabase.getInstance(this.getApplicationContext());
 
@@ -75,9 +78,10 @@ public class AddMedicineActivity extends AppCompatActivity {
                 medicine.setImage(image);
 
                 db.medicineDao().insertMedicine(medicine);
-                Toast.makeText(this, "Insert" + drugName, Toast.LENGTH_SHORT).show();
+
+                Toast.makeText(this, "Insert" + drugName + "-sl: "+ db.medicineDao().getAllMedicines().size(), Toast.LENGTH_SHORT).show();
                 CommonUtils.hideSoftKeyBoard(this);
-                CommonUtils.displayAlertDialog(this, "Thêm", "Thành công");
+                CommonUtils.displayAlertDialog(this, "Thêm thành công", null);
 
                 edtDrugName.setText("");
                 edtNote.setText("");

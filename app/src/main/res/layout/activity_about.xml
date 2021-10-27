@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -9,14 +10,13 @@
         android:id="@+id/ln1"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:background="#1CE1DA"
+        android:background="@color/main"
         android:gravity="center"
         android:orientation="horizontal">
 
         <ImageView
             android:layout_width="90dp"
             android:layout_height="90dp"
-
             android:scaleType="fitCenter"
             android:src="@drawable/logo" />
 
@@ -30,117 +30,125 @@
 
     </LinearLayout>
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/ln1"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:orientation="vertical">
+        android:layout_height="fill_parent"
+        android:layout_above="@id/lnBtn"
+        android:layout_below="@id/ln1">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#EACACA"
-            android:gravity="center"
-            android:orientation="horizontal"
-            android:padding="10dp"
-            android:weightSum="10">
-
-            <ImageView
-                android:layout_width="1dp"
-                android:layout_height="100dp"
-                android:layout_weight="3"
-                android:scaleType="fitCenter"
-                android:src="@drawable/logo" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="7"
-                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris ..." />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="400dp"
-            android:layout_marginTop="10dp"
-            android:gravity="center"
-            android:orientation="horizontal"
-            android:weightSum="2">
+            android:layout_margin="10dp"
+            android:orientation="vertical">
 
             <LinearLayout
-                android:layout_width="0dp"
+                android:id="@+id/ln2"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="5dp"
-                android:layout_weight="1"
-                android:background="#EACACA"
+                android:background="@drawable/custom_border_about_acti"
                 android:gravity="center"
-                android:orientation="vertical">
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:weightSum="10">
 
                 <ImageView
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:paddingTop="10dp"
+                    android:layout_width="1dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="3"
                     android:scaleType="fitCenter"
                     android:src="@drawable/logo" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="7"
                     android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris ..." />
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="0dp"
+                android:id="@+id/ln3"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:layout_weight="1"
-                android:background="#EACACA"
+                android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:orientation="vertical">
+                android:orientation="horizontal"
+                android:weightSum="2">
 
-                <ImageView
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:paddingTop="10dp"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/logo" />
-
-                <TextView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="7"
-                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris ..." />
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_border_about_acti"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/logo" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris ..." />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|top"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_border_about_acti"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:paddingTop="10dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/logo" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris ..." />
+                </LinearLayout>
             </LinearLayout>
+
         </LinearLayout>
+    </ScrollView>
 
-    </LinearLayout>
-
-
-    <Button
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/lnBtn"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="39dp"
-        android:background="@drawable/custom_button_radius_conner_50"
-        android:focusable="true"
-        android:paddingStart="25dp"
-        android:paddingTop="15dp"
-        android:paddingEnd="25dp"
-        android:paddingBottom="15dp"
-        android:text="Tiếp tục sủ dụng"
-        android:textAllCaps="false"
-        android:textColor="@color/black"
-        android:textSize="17sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:gravity="center"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button_radius_conner_50"
+            android:focusable="true"
+            android:paddingStart="25dp"
+            android:paddingTop="15dp"
+            android:paddingEnd="25dp"
+            android:paddingBottom="15dp"
+            android:text="Tiếp tục sủ dụng"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+    </LinearLayout>
 
 
 </RelativeLayout>
