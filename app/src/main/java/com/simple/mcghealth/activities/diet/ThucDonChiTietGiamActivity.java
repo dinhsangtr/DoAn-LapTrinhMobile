@@ -1,4 +1,4 @@
-package com.simple.mcghealth.activities;
+package com.simple.mcghealth.activities.diet;
 
 
 import android.content.Intent;
@@ -10,27 +10,27 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.simple.mcghealth.R;
 
-public class ThucDonChiTietNoActivity extends AppCompatActivity {
+public class ThucDonChiTietGiamActivity extends AppCompatActivity {
     Button btn;
     Button btnThucDon;
 
     /* access modifiers changed from: protected */
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        setContentView((int) R.layout.activity_thuc_don_chi_tiet_no);
+        setContentView((int) R.layout.activity_thuc_don_chi_tiet_giam);
         this.btn = (Button) findViewById(R.id.buttongoiythucdon);
         this.btn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                ThucDonChiTietNoActivity thucDonChiTietNoActivity = ThucDonChiTietNoActivity.this;
-                thucDonChiTietNoActivity.startActivity(new Intent(thucDonChiTietNoActivity, ThucDon7NgayNoActivity.class));
+                ThucDonChiTietGiamActivity thucDonChiTietGiamActivity = ThucDonChiTietGiamActivity.this;
+                thucDonChiTietGiamActivity.startActivity(new Intent(thucDonChiTietGiamActivity, ThucDon7NgayGiamCanActivity.class));
             }
         });
         this.btnThucDon = (Button) findViewById(R.id.buttonthamkhaothucdon);
         this.btnThucDon.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent intent = new Intent(ThucDonChiTietNoActivity.this, com.simple.mcghealth.activities.ListBaiVietActivity.class);
-                intent.putExtra("so", 3);
-                ThucDonChiTietNoActivity.this.startActivity(intent);
+                Intent intent = new Intent(ThucDonChiTietGiamActivity.this, com.simple.mcghealth.activities.ListBaiVietActivity.class);
+                intent.putExtra("so", 2);
+                ThucDonChiTietGiamActivity.this.startActivity(intent);
             }
         });
     }
