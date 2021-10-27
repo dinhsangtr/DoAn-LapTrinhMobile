@@ -26,6 +26,6 @@
         android:padding="8dp"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:src="@drawable/next"/>
+        android:src="@drawable/ic_baseline_arrow_forward_24"/>
 
 </LinearLayout>

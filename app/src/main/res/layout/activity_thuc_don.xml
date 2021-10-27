@@ -4,16 +4,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:textColor="#fff"
-        android:gravity="center"
-        android:background="#21a725"
-        android:paddingStart="15dp"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarCDAU"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:text="Chế Độ Ăn Uống"/>
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/main">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Chế Độ Ăn Uống"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
 
     <LinearLayout
         android:orientation="vertical"

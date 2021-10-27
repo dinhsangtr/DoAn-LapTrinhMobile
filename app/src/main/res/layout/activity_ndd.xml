@@ -7,17 +7,22 @@
     android:orientation="vertical"
     tools:context=".activities.NDDuongActivity">
 
-    <TextView
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:textColor="#fff"
-        android:gravity="center"
-        android:background="#21a725"
-        android:paddingStart="15dp"
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarTTDD"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:text="Thông Tin Dinh Dưỡng"
-        tools:ignore="RtlSymmetry" />
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/main">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Thông Tin Dinh Dưỡng"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -26,95 +31,110 @@
             android:id="@+id/listviewndd"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:divider="@color/GreenBackground"
-            android:dividerHeight="1dp" />
+            android:divider="@color/main"
+            android:dividerHeight="1dp"
+            tools:listitem="@layout/row_nguondinhduong"/>
+
         <LinearLayout
-            android:gravity="bottom"
-            android:orientation="vertical"
             android:id="@+id/linearthongtin"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="10dp">
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
             <LinearLayout
-                android:background="#1ead42"
-                android:padding="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
+                android:background="@color/main"
+                android:padding="5dp"
                 android:weightSum="8">
+
                 <TextView
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:textColor="#ffffff"
-                    android:gravity="center_vertical"
                     android:id="@+id/textviewtennddtt"
-                    android:paddingStart="5dp"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:gravity="center_vertical"
+                    android:paddingStart="5dp"
                     android:text="Vitamin D"
-                    android:layout_weight="7"/>
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
                 <ImageView
-                    android:layout_gravity="center_horizontal"
                     android:id="@+id/imageviewanttt"
                     android:layout_width="0dp"
                     android:layout_height="30dp"
-                    android:src="@drawable/down"
-                    android:layout_weight="1"
                     android:layout_above="@+id/tam"
-                    android:contentDescription="TODO" />
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/down" />
             </LinearLayout>
+
             <LinearLayout
-                android:orientation="vertical"
                 android:id="@+id/linearlyaoutbackground"
-                android:background="@drawable/hinhnen1"
                 android:layout_width="match_parent"
-                android:layout_height="340dp">
+                android:layout_height="340dp"
+                android:background="@drawable/hinhnen1"
+                android:orientation="vertical">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:weightSum="3">
+
                     <TextView
-                        android:textSize="19sp"
-                        android:textStyle="bold"
-                        android:textColor="#000"
-                        android:gravity="center"
                         android:id="@+id/textviewnguontt"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:text="Nguồn" android:layout_weight="1"/>
-                    <TextView
-                        android:textSize="19sp"
-                        android:textStyle="bold"
-                        android:textColor="#000"
+                        android:layout_weight="1"
                         android:gravity="center"
+                        android:text="Nguồn"
+                        android:textColor="#000"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+                    <TextView
                         android:id="@+id/textviewloiichtt"
-                        android:background="#fff"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:text="Lợi ích"
-                        android:layout_weight="1"/>
-                    <TextView
-                        android:textSize="19sp"
-                        android:textStyle="bold"
-                        android:textColor="#000"
+                        android:layout_weight="1"
+                        android:background="#fff"
                         android:gravity="center"
+                        android:text="Lợi ích"
+                        android:textColor="#000"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+                    <TextView
                         android:id="@+id/textviewlieuluongtt"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:text="Liều lượng"
-                        android:layout_weight="1"/>
+                        android:textColor="#000"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
                 </LinearLayout>
+
                 <TextView
-                    android:textSize="22sp"
-                    android:textStyle="italic"
-                    android:textColor="#000"
                     android:id="@+id/textviewthongtintt"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
                     android:paddingLeft="16dp"
                     android:paddingTop="16dp"
                     android:paddingRight="16dp"
                     android:paddingBottom="10dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="300dp"
-                    android:text="Cung cấp axit amin không thay thế, là đơn vị cấu trúc cơ thể, cơ bắp…cung cấp khoảng 20% năng lượng, duy trì một cơ thể khỏe mạnh."/>
+                    android:text="Cung cấp axit amin không thay thế, là đơn vị cấu trúc cơ thể, cơ bắp…cung cấp khoảng 20% năng lượng, duy trì một cơ thể khỏe mạnh."
+                    android:textColor="#000"
+                    android:textSize="22sp"
+                    android:textStyle="italic" />
             </LinearLayout>
         </LinearLayout>
     </RelativeLayout>

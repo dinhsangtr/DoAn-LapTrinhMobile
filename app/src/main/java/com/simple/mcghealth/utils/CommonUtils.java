@@ -5,9 +5,12 @@ import android.app.Activity;
 import android.content.DialogInterface;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 
 import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import java.io.ByteArrayOutputStream;
 import java.text.ParseException;
@@ -93,6 +96,20 @@ public class CommonUtils {
 
     public static Bitmap convertByteArrayToBitmap(byte[] imageData) {
         return BitmapFactory.decodeByteArray(imageData, 0, imageData.length);
+    }
+
+    //toolbar
+    public static void actionToolbar(Toolbar toolbar, AppCompatActivity activity) {
+        toolbar.setTitle(null);
+        activity.setSupportActionBar(toolbar);
+        activity.getSupportActionBar().setTitle("");
+        activity.getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                activity.finish();
+            }
+        });
     }
 
 
