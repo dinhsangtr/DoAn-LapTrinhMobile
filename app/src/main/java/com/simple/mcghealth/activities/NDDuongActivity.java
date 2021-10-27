@@ -3,7 +3,6 @@ package com.simple.mcghealth.activities;
 
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
@@ -12,9 +11,13 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+
 import com.simple.mcghealth.R;
-import com.simple.mcghealth.entities.NguonDinhDuong;
 import com.simple.mcghealth.adapters.NguonDinhDuongAdapter;
+import com.simple.mcghealth.entities.NguonDinhDuong;
+import com.simple.mcghealth.utils.CommonUtils;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -33,11 +36,14 @@ public class NDDuongActivity extends AppCompatActivity {
     TextView txtTenNdd;
     TextView txtThongTin;
 
+    private Toolbar toolbar;
+
     /* access modifiers changed from: protected */
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         setContentView((int) R.layout.activity_ndd);
         anhXa();
+        CommonUtils.actionToolbar(toolbar, this);
         addNDD();
         docNguonDinhDuong();
     }
@@ -45,7 +51,7 @@ public class NDDuongActivity extends AppCompatActivity {
     private void anhXa() {
         this.listView = (ListView) findViewById(R.id.listviewndd);
         this.LNTT = (LinearLayout) findViewById(R.id.linearthongtin);
-        this.LNTT.setVisibility(4);
+        this.LNTT.setVisibility(View.INVISIBLE);//4
         this.LinVisibily = false;
         this.txtTenNdd = (TextView) findViewById(R.id.textviewtennddtt);
         this.txtNguon = (TextView) findViewById(R.id.textviewnguontt);
@@ -57,12 +63,13 @@ public class NDDuongActivity extends AppCompatActivity {
         this.NguonDinhDuongArrayList = new ArrayList<>();
         this.adapter = new NguonDinhDuongAdapter(this, R.layout.row_nguondinhduong, this.NguonDinhDuongArrayList);
         this.listView.setAdapter(this.adapter);
+        this.toolbar = findViewById(R.id.toolbarTTDD);
     }
 
     private void docNguonDinhDuong() {
         this.listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> adapterView, View view, final int i, long j) {
-                NDDuongActivity.this.LNTT.setVisibility(0);
+                NDDuongActivity.this.LNTT.setVisibility(View.VISIBLE); //0
                 NDDuongActivity.this.LinVisibily = true;
                 NDDuongActivity.this.LNTT.setAnimation(AnimationUtils.loadAnimation(NDDuongActivity.this, R.anim.anim2));
                 switch (new Random().nextInt(3)) {
@@ -114,10 +121,12 @@ public class NDDuongActivity extends AppCompatActivity {
         this.imgAn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 NDDuongActivity.this.LNTT.setAnimation(AnimationUtils.loadAnimation(NDDuongActivity.this, R.anim.anim));
-                NDDuongActivity.this.LNTT.setVisibility(4);
+                NDDuongActivity.this.LNTT.setVisibility(View.INVISIBLE);//4
                 NDDuongActivity.this.LinVisibily = false;
             }
         });
+
+
         this.txtThongTin.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
             }
@@ -150,7 +159,7 @@ public class NDDuongActivity extends AppCompatActivity {
     public void onBackPressed() {
         if (this.LinVisibily.booleanValue()) {
             this.LinVisibily = false;
-            this.LNTT.setVisibility(4);
+            this.LNTT.setVisibility(View.INVISIBLE);
             return;
         }
         super.onBackPressed();

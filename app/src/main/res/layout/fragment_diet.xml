@@ -71,20 +71,21 @@
             android:background="@drawable/custom_border_imageview_bmi"
             android:gravity="center"
             android:orientation="vertical"
-            android:padding="3dp">
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp">
 
             <ImageView
                 android:id="@+id/imgbtnTTDD"
-                android:layout_width="140dp"
-                android:layout_height="140dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:layout_gravity="center"
-                android:background="#EF9A9A"
                 android:scaleType="fitCenter"
-                android:src="@drawable/logo" />
+                android:src="@drawable/info" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
                 android:gravity="center"
                 android:text="Thông tin"
                 android:textSize="20sp"
@@ -102,22 +103,23 @@
             android:background="@drawable/custom_border_imageview_bmi"
             android:gravity="center"
             android:orientation="vertical"
-            android:padding="3dp">
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp">
 
             <ImageView
-                android:layout_width="140dp"
-                android:layout_height="140dp"
-                android:layout_gravity="center"
-                android:background="#EF9A9A"
-                android:scaleType="fitCenter"
                 android:id="@+id/btnThucDon"
-                android:src="@drawable/logo">
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:src="@drawable/nutrition">
 
             </ImageView>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
                 android:gravity="center"
                 android:text="Gợi ý dinh dưỡng"
                 android:textSize="20sp"

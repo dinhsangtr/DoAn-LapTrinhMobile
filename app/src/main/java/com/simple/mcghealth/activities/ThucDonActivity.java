@@ -7,8 +7,10 @@ import android.view.View;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import com.simple.mcghealth.R;
+import com.simple.mcghealth.utils.CommonUtils;
 
 public class ThucDonActivity extends AppCompatActivity {
     TextView txtAnDu;
@@ -16,12 +18,15 @@ public class ThucDonActivity extends AppCompatActivity {
     TextView txtGiam;
     TextView txtTang;
     TextView txtTieuDuong;
+    private Toolbar toolbar;
 
 
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         setContentView((int) R.layout.activity_thuc_don);
         anhXa();
+        CommonUtils.actionToolbar(toolbar, this);
+
         this.txtTang.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 ThucDonActivity.this.startActivity(new Intent(ThucDonActivity.this, ThucDonChiTietActivity.class));
@@ -59,6 +64,7 @@ public class ThucDonActivity extends AppCompatActivity {
         this.txtTang = (TextView) findViewById(R.id.textviewchedotangcan);
         this.txtBeoPhi = (TextView) findViewById(R.id.textviewchedobeophi);
         this.txtTieuDuong = (TextView) findViewById(R.id.textviewchedotieuduong);
+        this.toolbar = (Toolbar) findViewById(R.id.toolbarCDAU);
     }
 }
 
