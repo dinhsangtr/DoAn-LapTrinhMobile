@@ -22,11 +22,17 @@ public interface MedicationTimeDao {
     @Query("DELETE FROM medication_time WHERE medicineId = :medicineID")
     void deleteTime(int medicineID);
 
+    @Query("UPDATE medication_time SET count= :count, time_drink = :time, status = :status WHERE id= :medicationTimeID AND session = :session")
+    void updateTime(int medicationTimeID, String session, int count, String time, int status);
+
+    @Query("SELECT * FROM medication_time WHERE id = :id")
+    MedicationTime getTime(int id);
+
     @Query("SELECT * FROM medication_time WHERE medicineId = :id")
     List<MedicationTime> getAllTime(int id);
 
-
-
+    @Query("SELECT * FROM medication_time WHERE medicineId = :id AND status == 1")
+    List<MedicationTime> getAllTimeOn(int id);
 
 
     @Query("SELECT * FROM medicine")

@@ -1,64 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.DietFragment">
 
     <FrameLayout
+        android:id="@+id/f1"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:id="@+id/ln8"
         android:orientation="horizontal">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#74DCA8"
+            android:background="@color/main"
             android:gravity="center"
-            android:textSize="40sp"
-            android:textColor="@color/black"
-            android:textStyle="bold"
             android:text="@string/cdau"
-            android:textAlignment="center">
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold">
 
         </TextView>
-
-
-
     </FrameLayout>
 
-    <TextView
+    <LinearLayout
+        android:id="@+id/ln1"
         android:layout_width="match_parent"
-        android:layout_height="90dp"
-        android:background="#E3B7B7"
-        android:text="@string/bmi_c_a_b_n_l"
-        android:layout_marginTop="65dp"
-        android:textSize="30sp">
+        android:layout_height="wrap_content"
+        android:layout_below="@id/f1"
+        android:layout_margin="7dp"
+        android:background="@drawable/custom_border_layout_bmi"
+        android:orientation="horizontal"
+        android:padding="7dp">
 
-    </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#E3B7B7"
+            android:paddingStart="5dp"
+            android:text="@string/bmi_c_a_b_n_l"
+            android:textSize="24sp"
+            tools:ignore="RtlSymmetry" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:background="#E3B7B7"
+            android:text="24"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="180dp"
-        android:layout_weight="1"
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp"
-        android:background="#74DCA8"
-        android:orientation="horizontal">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
+        android:layout_below="@+id/ln1"
+        android:layout_margin="7dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
 
-            <ImageButton
-                android:layout_width="140dp"
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_border_imageview_bmi"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="3dp">
+
+            <ImageView
                 android:id="@+id/imgbtnTTDD"
+                android:layout_width="140dp"
                 android:layout_height="140dp"
                 android:layout_gravity="center"
                 android:background="#EF9A9A"
@@ -68,20 +85,24 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Thông tin đinh dưỡng"
-                android:textSize="20sp"
                 android:gravity="center"
+                android:text="Thông tin"
+                android:textSize="20sp"
                 android:textStyle="bold">
 
             </TextView>
 
         </LinearLayout>
+
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="3dp"
             android:layout_weight="1"
+            android:background="@drawable/custom_border_imageview_bmi"
+            android:gravity="center"
             android:orientation="vertical"
-            android:gravity="center">
+            android:padding="3dp">
 
             <ImageButton
                 android:layout_width="140dp"
@@ -96,10 +117,10 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:text="Gợi ý dinh dưỡng"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:gravity="center">
+                android:textStyle="bold">
 
             </TextView>
 
@@ -108,8 +129,4 @@
     </LinearLayout>
 
 
-
-
-
-
-</FrameLayout>
+</RelativeLayout>

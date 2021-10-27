@@ -1,17 +1,17 @@
 package com.simple.mcghealth.activities;
 
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
-import android.os.Bundle;
-
 import com.etebarian.meowbottomnavigation.MeowBottomNavigation;
+import com.simple.mcghealth.R;
 import com.simple.mcghealth.fragments.CalendarFragment;
 import com.simple.mcghealth.fragments.DietFragment;
 import com.simple.mcghealth.fragments.HealthFragment;
 import com.simple.mcghealth.fragments.HomeFragment;
 import com.simple.mcghealth.fragments.SettingFragment;
-import com.simple.mcghealth.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        bottomNavigation.show(1, true);
+        bottomNavigation.show(4, true);
         bottomNavigation.setOnClickMenuListener(item -> {
             //Toast.makeText(getApplicationContext(), "You clicked" + item.getId(), Toast.LENGTH_SHORT).show();
         });

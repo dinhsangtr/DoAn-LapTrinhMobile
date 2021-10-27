@@ -18,7 +18,9 @@
 
     <!---->
     <string name="cdau">Chế độ ăn uống</string>
-    <string name="bmi_c_a_b_n_l">BMI của bạn là :</string>
+    <string name="bmi_c_a_b_n_l">BMI của bạn là:</string>
 
 
+    <string name="channel_name">Nhắc lịch uống thuốc</string>
+    <string name="channel_description">Description</string>
 </resources>

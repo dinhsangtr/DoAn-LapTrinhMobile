@@ -21,8 +21,12 @@ public interface MedicineDao {
     @Query("UPDATE medicine SET note = :note, from_date = :from, to_date = :to WHERE id = :id")
     void updateMedicine(int id, String note, String from, String to);
 
-    @Query("UPDATE medicine SET note = :note WHERE id = :id")
-    void updateMedicine(int id, String note);
+    @Query("UPDATE medicine SET name = :name WHERE id = :id")
+    void updateMedicine(int id, String name);
+
+    //Cập nhật trong trang setup - dialog
+    @Query("UPDATE medicine SET name = :name, image = :image WHERE id = :id")
+    void updateMedicine(int id, String name, byte[] image);
 
     @Delete
     void deleteMedicine(Medicine medicine);
