@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.simple.mcghealth">
-
     <!--
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission
@@ -14,13 +13,11 @@
         tools:ignore="ProtectedPermissions" />
     <uses-feature android:name="android.hardware.sensor.accelerometer" />
     -->
-
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
     <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
-
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 
     <application
@@ -32,6 +29,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MCGHealth">
+        <activity
+            android:name=".activities.About3"
+            android:exported="true"/>
+
+
+        <activity
+            android:name=".activities.About4"
+            android:exported="true"/>
+
+
+        <activity
+            android:name=".activities.About2"
+            android:exported="true"/>
+
+
+        <activity
+            android:name=".activities.About1"
+            android:exported="true"/>
+
+
         <activity
             android:name=".activities.AddInfoMainActivity"
             android:exported="true" />
@@ -66,27 +83,28 @@
             android:exported="false" />
         <activity
             android:name=".activities.ThucDon7NgayActivity"
-            android:exported="false" android:screenOrientation="landscape"/>
+            android:exported="false"
+            android:screenOrientation="landscape" />
         <activity
             android:name=".activities.ThucDon7NgayGiamCanActivity"
-            android:exported="false" android:screenOrientation="landscape" />
+            android:exported="false"
+            android:screenOrientation="landscape" />
         <activity
             android:name=".activities.ThucDon7NgayNoActivity"
-            android:exported="false" android:screenOrientation="portrait"/>
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activities.ThucDonChiTietActivity"
             android:exported="false" />
         <activity
             android:name=".activities.DocbaoActivity"
-            android:exported="false" android:screenOrientation="fullSensor" />
+            android:exported="false"
+            android:screenOrientation="fullSensor" />
+        <activity android:name=".activities.ListBaiVietActivity" />
         <activity
-            android:name=".activities.ListBaiVietActivity"
-            />
-
-        <activity
-
             android:name=".activities.ThucDonActivity"
-            android:exported="true" android:screenOrientation="portrait" />
+            android:exported="true"
+            android:screenOrientation="portrait" />
         <activity android:name=".activities.AboutActivity" />
         <activity android:name=".activities.MainActivity" />
         <activity android:name=".activities.IntroActivity" />
@@ -107,6 +125,7 @@
                 <action android:name="com.simple.mcghealth.stop_alarm" />
             </intent-filter>
         </receiver>
+
         <service
             android:name=".services.Music"
             android:enabled="true" />

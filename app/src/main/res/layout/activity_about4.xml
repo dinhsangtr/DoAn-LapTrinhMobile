@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarAddDrug4"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/main">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Giới Thiệu"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/toolbarAddDrug4"
+        android:src="@drawable/logo"
+        android:id="@+id/image1"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image1"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:text="Bất kỳ độ tuổi nào cũng nên duy trì một thói quen ăn uống lành mạnh và đảm bảo các thành phần dinh dưỡng. Tháp dinh dưỡng sẽ cung cấp các thông tin về những thực phẩm nên lựa chọn trong chế độ ăn uống hàng ngày.
+
+Thực tế nhiều người muốn xây dựng chế độ ăn uống lành mạnh nhưng không biết bắt đầu từ đâu, tháp dinh dưỡng sẽ giúp định hướng về nhu cầu thức ăn cho cơ thể, cũng như đưa ra các gợi ý dựa vào hình ảnh trong tháp về các loại thực phẩm nên dùng và nên hạn chế như thế nào.
+
+Sử dụng tháp dinh dưỡng hàng ngày sẽ giúp thực hiện một thói quen ăn uống lành mạnh, nhắc nhở người sử dụng về những thứ nên ăn và không nên để có thể dễ dàng lựa chọn thực phẩm cho bữa ăn tiếp theo."
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:background="#F4EFEF"/>
+</RelativeLayout>
