@@ -11,7 +11,7 @@ import androidx.fragment.app.Fragment;
 
 import com.simple.mcghealth.R;
 import com.simple.mcghealth.activities.NDDuongActivity;
-import com.simple.mcghealth.activities.ThucDonActivity;
+import com.simple.mcghealth.activities.diet.ThucDonActivity;
 
 
 /**

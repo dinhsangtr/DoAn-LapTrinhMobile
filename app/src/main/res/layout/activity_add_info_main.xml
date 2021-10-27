@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_height="match_parent">
 
     <ImageView
         android:id="@+id/image"
@@ -20,8 +20,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/image"
         android:layout_marginStart="50dp"
-        android:layout_marginEnd="50dp"
         android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
         android:background="@drawable/custom_button_radius"
         android:orientation="vertical"
         android:weightSum="7"
@@ -37,12 +37,13 @@
             android:hint="Nhập Thông Tin"
             android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="34sp"
+            android:textSize="28sp"
             android:textStyle="bold">
 
         </TextView>
 
         <EditText
+            android:id="@+id/txtName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -51,15 +52,14 @@
             android:layout_weight="3"
             android:background="@drawable/custom_round_editext"
             android:hint="Họ Tên"
-            android:id="@+id/txtName"
             android:padding="5dp"
             android:textColor="@color/black"
             android:textSize="20sp"
-            android:textStyle="bold">
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck" />
 
-        </EditText>
-
-        <EditText
+        <TextView
+            android:id="@+id/txtBirthday"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -68,15 +68,95 @@
             android:layout_weight="3"
             android:background="@drawable/custom_round_editext"
             android:hint="Ngày Sinh"
-            android:id="@+id/txtBirthday"
             android:padding="5dp"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold">
 
-        </EditText>
+        </TextView>
 
-        <EditText
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/txtHeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_round_editext"
+                    android:hint="Chiều Cao"
+                    android:inputType="numberDecimal"
+                    android:padding="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dip"
+                android:layout_marginEnd="8dp"
+                android:text="cm"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp">
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/txtWeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/custom_round_editext"
+                    android:hint="Cân Nặng"
+                    android:inputType="numberDecimal"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dip"
+                android:layout_marginEnd="8dp"
+                android:text="kg"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/linearLayout1"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <Spinner
+            android:id="@+id/spnGender"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -84,39 +164,23 @@
             android:layout_marginEnd="10dp"
             android:layout_weight="3"
             android:background="@drawable/custom_round_editext"
-            android:hint="Chiều Cao"
-            android:id="@+id/txtHeight"
-            android:padding="5dp"
-            android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold">
-        </EditText>
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="10dp"
-            android:layout_weight="3"
-            android:background="@drawable/custom_round_editext"
-            android:hint="Cân Nặng"
-            android:id="@+id/txtWeight"
-            android:padding="5dp"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            android:textStyle="bold">
-        </EditText>
+
+        </Spinner>
+
         <Button
+            android:id="@+id/btnContinue"
             android:layout_width="142dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="80dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="20dp"
-            android:textAlignment="center"
-            android:background="@drawable/custom_button_color"
+            android:background="@drawable/custom_button_radius_conner_50"
             android:focusable="true"
             android:text="Tiếp Tục"
+            android:textAlignment="center"
             android:textAllCaps="false"
             android:textColor="@color/black"
             android:textSize="17sp"
