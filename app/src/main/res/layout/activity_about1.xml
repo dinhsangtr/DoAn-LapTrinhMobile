@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarAddDrug1"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/main">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Chính Sách"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/layout6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbarAddDrug1"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvcs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="#F8F6F6"
+            android:text="Chào mừng bạn đến với MCG Health!
+
+Tài khoản khách hàng được tạo ra trên MCG Health, sau lần đầu tiên đăng nhập vào tài khoản, khách hàng tự chịu trách nhiệm về năng lực hành vi trong việc thay đổi thông tin cá nhân và sử dụng MCG Health. Việc thu thập dữ liệu chủ yếu trên MCG Health bao gồm: email, điện thoại, tên đăng nhập, mật khẩu đăng nhập, địa chỉ khách hàng. Đây là các thông tin mà MCG Health cần khách hàng bắt buộc khi đăng ký sử dụng dịch vụ y tế và để MCG Health liên hệ xác nhận khi khách hàng đăng ký sử dụng dịch vụ trên app nhằm đảm bảo quyền lợi cho cho khách hàng.
+Trong quá trình sử dụng dịch vụ y tế trên MCG Health, chúng tôi lưu giữ thông tin chi tiết về lịch sử đặt lịch hẹn, bệnh án điện tử, đơn thuốc (nếu có), tiểu sử bệnh lý.
+Các khách hàng sẽ tự chịu trách nhiệm về bảo mật và lưu giữ mọi hoạt động sử dụng dịch vụ y tế dưới tên đăng ký, mật khẩu của mình. Ngoài ra, khách hàng có trách nhiệm thông báo kịp thời về MCG Health về những hành vi sử dụng trái phép, lạm dụng, vi phạm bảo mật, lưu giữ tên đăng ký và mật khẩu của bên thứ ba để có biện pháp giải quyết phù hợp.
+
+"
+            android:textColor="@color/black"
+            android:textSize="19dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Tiếp Tục"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/tvcs"/>
+    </LinearLayout>
+
+</RelativeLayout>

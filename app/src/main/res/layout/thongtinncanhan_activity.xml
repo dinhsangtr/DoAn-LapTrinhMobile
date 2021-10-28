@@ -6,23 +6,22 @@
     android:orientation="vertical">
 
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:orientation="vertical"
-        android:background="#74DCA8">
+        android:background="#74DCA8"
+        android:orientation="vertical">
+
         <TextView
+            android:id="@+id/txtTenNguoiDung"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="35sp"
-            android:id="@+id/txtTenNguoiDung"
             android:gravity="center"
-            android:text="Trương Đình Sang">
+            android:text="Trương Đình Sang"
+            android:textSize="35sp">
 
 
         </TextView>
-
 
 
     </LinearLayout>
@@ -30,8 +29,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:orientation="vertical"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -54,10 +53,10 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
+               android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
                 android:layout_marginEnd="10dp"
-                android:src="@drawable/ic_baseline_edit_24" />
+                android:src="@drawable/ic_baseline_add_24" />
         </RelativeLayout>
 
 
@@ -102,32 +101,23 @@
         android:layout_width="match_parent"
         android:layout_height="300dp"
         android:orientation="vertical">
-        <RelativeLayout
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:background="#EACACA">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
                 android:gravity="center"
                 android:text="Thông tin sức khỏe"
-                android:textAlignment="center"
                 android:textSize="32sp"
                 android:textStyle="bold">
 
             </TextView>
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"
-                android:layout_marginEnd="10dp"
-                android:src="@drawable/ic_baseline_edit_24" />
-        </RelativeLayout>
+        </LinearLayout>
 
         <EditText
             android:id="@+id/txtHuyetAp"
@@ -160,6 +150,7 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:text="Thông tin bệnh : " />
+
         <EditText
             android:id="@+id/txtTieuSu"
             android:layout_width="match_parent"
@@ -180,9 +171,9 @@
             android:id="@+id/btnEdit"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:text="Chỉnh sửa"
-            android:textColor="@color/black"
-            android:layout_gravity="center"/>
+            android:textColor="@color/black" />
     </LinearLayout>
 
 </LinearLayout>

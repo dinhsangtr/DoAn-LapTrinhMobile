@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarAddDrug2"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/main">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Giới Thiệu"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/toolbarAddDrug2"
+        android:src="@drawable/logo"
+        android:id="@+id/image1"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image1"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:text="Nhà báo kỳ cựu chuyên về công nghệ, David Pogue, đã tiến hành một đánh giá rộng rãi nhất về các ứng dụng nhắc nhở việc uống thuốc. Sau khi kiểm tra 47 ứng dụng khác nhau, ông nghĩ MediSafe là lựa chọn tốt nhất.
+MediSafe làm mọi thứ đúng cách. Nó rất dễ sử dụng và thiết lập. Bạn cũng có thể thêm hình dạng và màu sắc của viên thuốc, cũng như nhận lời nhắc uống loại thuốc đó vào đúng thời điểm. Bạn thậm chí có thể cài đặt báo lại lời nhắc sau một giờ, trong trường hợp bạn không thể uống thuốc vào thời điểm chính xác trong lời nhắc.
+Nhưng phần tốt nhất của MediSafe là nó cho phép bạn thêm người phụ thuộc và liều lượng thuốc của họ. Vì vậy, nếu những người thân yêu của bạn hay quên uống thuốc đúng giờ, hãy tạo ra một profile cho họ và thêm lịch trình của họ vào. Bạn thậm chí có thể cài đặt MediSafe trên điện thoại của họ và liên kết cả hai ứng dụng (của bạn và của người thân), để bạn có thể thiết lập lời nhắc và kích hoạt trên cả hai điện thoại.
+Một số tính năng của MediSafe chỉ có sẵn trong phiên bản cao cấp, và nếu bạn chịu trách nhiệm về việc uống thuốc cho cả gia đình, điều đó sẽ rất đáng giá. Nhưng dù sao, hãy thử phiên bản miễn phí trước đã.
+"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:background="#F4EFEF"/>
+
+
+
+</RelativeLayout>

@@ -56,7 +56,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        bottomNavigation.show(4, true);
+
+        bottomNavigation.show(1, true); //vị trí trang fragment bắt dầu
         bottomNavigation.setOnClickMenuListener(item -> {
             //Toast.makeText(getApplicationContext(), "You clicked" + item.getId(), Toast.LENGTH_SHORT).show();
         });
