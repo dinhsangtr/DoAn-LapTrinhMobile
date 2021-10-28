@@ -38,4 +38,8 @@ public interface MedicineDao {
 
     @Query("SELECT * FROM medicine WHERE id = :id")
     Medicine findMedicine(int id);
+
+    @Transaction
+    @Query("DELETE FROM medicine")
+    void deleteAllMedicine();
 }

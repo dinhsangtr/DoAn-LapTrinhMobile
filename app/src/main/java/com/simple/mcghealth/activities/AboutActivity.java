@@ -45,7 +45,7 @@ public class AboutActivity extends AppCompatActivity {
         this.btnuse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                AboutActivity.this.startActivity(new Intent(AboutActivity.this, HomeFragment.class));
+                AboutActivity.this.startActivity(new Intent(AboutActivity.this, AddInfoMainActivity.class));
             }
         });
 
