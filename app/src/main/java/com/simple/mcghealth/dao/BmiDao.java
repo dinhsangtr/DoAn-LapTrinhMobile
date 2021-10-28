@@ -25,4 +25,6 @@ public interface BmiDao {
     @Query("SELECT * FROM bmi WHERE idUser =:idUser ORDER BY id DESC LIMIT 1")
     Bmi getBMILast(int idUser);
 
+
+
 }

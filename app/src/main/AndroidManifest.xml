@@ -30,6 +30,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MCGHealth">
         <activity
+            android:name=".activities.ThongTinCaNhanActivity"
+            android:exported="true"/>
+        <activity
             android:name=".activities.About3"
             android:exported="true"/>
 

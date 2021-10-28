@@ -16,9 +16,13 @@ public interface UserDao {
     @Insert
     void insertUser(User user);
 
-    //Update thoong tin cow banr
+    //Update thoong tin cow ban
     @Query("UPDATE user SET FullName = :name, BirthDay = :birth, Gender = :gender WHERE Id = :id")
     void updateUserBasic(int id, String name, String birth, String gender);
+
+    //Update thoong tin
+    @Query("UPDATE user SET FullName = :name, BirthDay = :birth  WHERE Id = :id")
+    void updateUser(int id, String name, String birth );
 
     //Update thông tin bệnh
     @Query("UPDATE user SET DiseaseInfo = :diseaseNow, DiseaseInfoHistory = :diseaseHistory WHERE Id = :id")
@@ -37,4 +41,16 @@ public interface UserDao {
     @Transaction
     @Query("SELECT * FROM user ORDER BY Id DESC LIMIT 1")
     User getUserLast();
+
+    @Transaction
+    @Query("SELECT * FROM user Order By id ASC LIMIT 1")
+    User getTOP1() ;
+
+    //getId
+    @Transaction
+    @Query("SELECT * FROM user WHERE Id =:id")
+    User getUserById(int id);
+
+
+
 }
