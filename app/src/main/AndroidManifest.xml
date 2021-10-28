@@ -30,6 +30,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MCGHealth">
         <activity
+            android:name=".activities.UserManualActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.HelpActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.InfoDevelopers"
+            android:exported="true" />
+        <activity
+            android:name=".activities.InfoAppActivity"
+            android:exported="true" />
+        <activity
             android:name=".activities.Item1Acrivity"
             android:exported="true" />
         <activity

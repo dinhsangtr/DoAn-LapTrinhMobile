@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
@@ -17,7 +18,11 @@ import androidx.fragment.app.Fragment;
 
 import com.simple.mcghealth.AppDatabase;
 import com.simple.mcghealth.R;
+import com.simple.mcghealth.activities.HelpActivity;
+import com.simple.mcghealth.activities.InfoAppActivity;
+import com.simple.mcghealth.activities.InfoDevelopers;
 import com.simple.mcghealth.activities.IntroFTActivity;
+import com.simple.mcghealth.activities.UserManualActivity;
 import com.simple.mcghealth.dao.BmiDao;
 import com.simple.mcghealth.entities.User;
 
@@ -36,6 +41,11 @@ public class SettingFragment extends Fragment {
     private Button btnReset;
     private AppDatabase appDatabase;
     private Activity activity;
+    private LinearLayout layout2;
+    private LinearLayout layout3;
+    private LinearLayout layout4;
+    private LinearLayout layout5;
+
 
     public SettingFragment() {
     }
@@ -70,8 +80,8 @@ public class SettingFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_setting, container, false);
+        anhXa(view);
 
-        btnReset = view.findViewById(R.id.btnReset);
         this.btnReset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -107,6 +117,41 @@ public class SettingFragment extends Fragment {
                 al.show();
             }
         });
+        this.layout2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), UserManualActivity.class);
+                startActivity(intent);
+            }
+        });
+        this.layout3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), InfoAppActivity.class);
+                startActivity(intent);
+            }
+        });
+        this.layout4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), InfoDevelopers.class);
+                startActivity(intent);
+            }
+        });
+        this.layout5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), HelpActivity.class);
+                startActivity(intent);
+            }
+        });
         return view;
+    }
+    private void anhXa( View view){
+        btnReset = view.findViewById(R.id.btnReset);
+        layout2=view.findViewById(R.id.layout2);
+        layout3 = view.findViewById(R.id.layout3);
+        layout4 = view.findViewById(R.id.layout4);
+        layout5 = view.findViewById(R.id.layout5);
     }
 }
