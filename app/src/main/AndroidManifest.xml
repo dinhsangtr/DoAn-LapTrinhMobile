@@ -33,6 +33,9 @@
             android:name=".activities.Item1Acrivity"
             android:exported="true" />
         <activity
+            android:name=".activities.ThongTinCaNhanActivity"
+            android:exported="true"/>
+        <activity
             android:name=".activities.About3"
             android:exported="true" />
         <activity

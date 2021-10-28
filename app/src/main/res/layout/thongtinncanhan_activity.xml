@@ -51,45 +51,50 @@
             </TextView>
 
             <ImageView
+                android:id="@+id/btnSua1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-               android:layout_alignParentEnd="true"
+                android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
                 android:layout_marginEnd="10dp"
-                android:src="@drawable/ic_baseline_add_24" />
+                android:src="@drawable/ic_baseline_edit_24" />
         </RelativeLayout>
 
 
-        <EditText
+        <TextView
             android:id="@+id/txtBirthday"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
+            android:textSize="24sp"
             android:text="Tuổi : " />
 
-        <EditText
+        <TextView
             android:id="@+id/txtHeight"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:textSize="24sp"
             android:inputType="textPersonName"
             android:text="Chiều Cao : "
             tools:ignore="TextFields" />
 
-        <EditText
+        <TextView
             android:id="@+id/txtWeight"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="24sp"
             android:ems="10"
             android:inputType="textPersonName"
             android:text="Cân Nặng : "
             tools:ignore="TextFields" />
 
-        <EditText
+        <TextView
             android:id="@+id/txtBMI"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="24sp"
             android:ems="10"
             android:inputType="textPersonName"
             android:text="Chỉ số BMI : " />
@@ -102,57 +107,49 @@
         android:layout_height="300dp"
         android:orientation="vertical">
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:background="#EACACA">
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
                 android:gravity="center"
                 android:text="Thông tin sức khỏe"
+                android:textAlignment="center"
                 android:textSize="32sp"
                 android:textStyle="bold">
 
             </TextView>
 
-        </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/btnSua2"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_baseline_edit_24" />
+        </RelativeLayout>
 
-        <EditText
-            android:id="@+id/txtHuyetAp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Huyết áp : " />
 
-        <EditText
-            android:id="@+id/txtNhipTim"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Nhịp tim : " />
 
-        <EditText
-            android:id="@+id/txtSP02"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="SP02 : " />
 
-        <EditText
+
+        <TextView
             android:id="@+id/txtThongtinbenh"
+            android:textSize="24sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
             android:text="Thông tin bệnh : " />
 
-        <EditText
+        <TextView
             android:id="@+id/txtTieuSu"
+            android:textSize="24sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -161,19 +158,5 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:orientation="vertical">
-
-
-        <Button
-            android:id="@+id/btnEdit"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Chỉnh sửa"
-            android:textColor="@color/black" />
-    </LinearLayout>
 
 </LinearLayout>
