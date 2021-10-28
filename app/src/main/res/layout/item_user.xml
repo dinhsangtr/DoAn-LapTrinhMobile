@@ -4,7 +4,7 @@
     android:id="@+id/layout4"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="5dp"
+    android:layout_marginTop="10dp"
     android:background="@drawable/custom_item_user"
     android:orientation="vertical"
     android:padding="5dp"
