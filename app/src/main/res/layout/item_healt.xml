@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/Unit1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BMI"
+        android:background="@drawable/custom_practice"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                <TextView
+                    android:id="@+id/tvnameunit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Chạy bộ là một môn thể thao lành mạnh rất tốt cho sức khỏe "
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="Chạy bộ là một môn thể thao lành mạnh rất tốt cho sức khỏe Chạy bộ là một môn thể thao lành mạnh rất tốt cho sức khỏe Chạy bộ là một môn thể thao lành mạnh rất tốt cho sức khỏe Chạy bộ là một môn thể thao lành mạnh rất tốt cho sức khỏe "
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="normal"
+                android:maxLength="350"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

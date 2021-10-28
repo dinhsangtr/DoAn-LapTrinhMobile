@@ -26,6 +26,7 @@ public abstract class AppDatabase extends RoomDatabase {
     public abstract WalkingStepDao walkingStepDao();
     public abstract UserDao userDao();
     public abstract BmiDao bmiDao();
+    //public abstract WalkingStepDao walkingStepDao();
     //
 
 

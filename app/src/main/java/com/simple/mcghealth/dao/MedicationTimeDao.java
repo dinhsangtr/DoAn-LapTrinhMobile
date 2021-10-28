@@ -4,6 +4,7 @@ import androidx.room.Dao;
 import androidx.room.Insert;
 import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
+import androidx.room.Transaction;
 
 import com.simple.mcghealth.entities.MedicationTime;
 import com.simple.mcghealth.entities.relations.MedicationWithTime;
@@ -40,6 +41,10 @@ public interface MedicationTimeDao {
 
     @Query("SELECT * FROM medicine WHERE id = :medicineID")
     MedicationWithTime getDataById(int medicineID);
+
+    @Transaction
+    @Query("DELETE FROM medication_time")
+    void deleteAllMedication_Time();
 
 
 /*
