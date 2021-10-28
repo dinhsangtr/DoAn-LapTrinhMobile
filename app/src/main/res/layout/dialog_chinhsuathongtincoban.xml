@@ -2,8 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="50dp">
 
 
 
@@ -30,7 +31,7 @@
         android:layout_width="match_parent"
         android:layout_height="300dp"
         android:orientation="vertical"
-        android:layout_marginTop="10dp">
+        >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -89,66 +90,7 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:orientation="vertical">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="#EACACA">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="32sp"
-                android:textStyle="bold"
-                android:text="Thông tin sức khỏe"
-                android:gravity="center">
 
-            </TextView>
-
-        </LinearLayout>
-
-        <EditText
-            android:id="@+id/txtHuyetAp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Huyết áp : " />
-
-        <EditText
-            android:id="@+id/txtNhipTim"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Nhịp tim : " />
-
-        <EditText
-            android:id="@+id/editTextTextPersonName9"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="SP02 : " />
-
-        <EditText
-            android:id="@+id/txtThongtinbenh"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Thông tin bệnh : " />
-        <EditText
-            android:id="@+id/txtTieuSu"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Tiền sử bệnh : " />
-
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"

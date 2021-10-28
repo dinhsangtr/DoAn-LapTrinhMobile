@@ -1,12 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/custom_othucdon" android:layout_width="match_parent" android:layout_height="match_parent">
-    <LinearLayout android:layout_width="match_parent" android:layout_height="30dp" android:weightSum="6">
-        <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="#000" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="Chế độ giảm cân" android:layout_weight="1"/>
-        <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="#000" android:gravity="center" android:background="#fff" android:layout_width="0dp" android:layout_height="match_parent" android:text="Bữa Sáng" android:layout_weight="1"/>
-        <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="#000" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="Bữa Trưa" android:layout_weight="1"/>
-        <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="#000" android:gravity="center" android:background="#fff" android:layout_width="0dp" android:layout_height="match_parent" android:text="Bữa Phụ 1" android:layout_weight="1"/>
-        <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="#000" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="Bữa Tối" android:layout_weight="1"/>
-        <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="#000" android:gravity="center" android:background="#fff" android:layout_width="0dp" android:layout_height="match_parent" android:text="Bữa Phụ 2" android:layout_weight="1"/>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt"
+    android:orientation="vertical"
+    android:background="#E4ACED"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:weightSum="6">
+
+        <TextView
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Chế độ giảm cân"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:gravity="center"
+            android:background="#fff"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Bữa Sáng"
+            android:layout_weight="1"/>
+        <TextView
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Bữa Trưa"
+            android:layout_weight="1"/>
+        <TextView
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:gravity="center"
+            android:background="#fff"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Bữa Phụ 1"
+            android:layout_weight="1"/>
+        <TextView
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Bữa Tối"
+            android:layout_weight="1"/>
+        <TextView
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:gravity="center"
+            android:background="#fff"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Bữa Phụ 2"
+            android:layout_weight="1"/>
+
     </LinearLayout>
     <ScrollView android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
         <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
