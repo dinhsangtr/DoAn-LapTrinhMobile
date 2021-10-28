@@ -3,6 +3,8 @@ plugins {
 }
 
 android {
+
+
     compileSdkVersion 30
 
     defaultConfig {
@@ -25,6 +27,11 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    
+    dataBinding {
+        enabled = true
+    }
+
 }
 
 dependencies {

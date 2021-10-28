@@ -1,135 +1,207 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/walking_mode_activity"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    tools:context=".fragments.HomeFragment">
-
-    <RelativeLayout
-        android:id="@+id/rlview"
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/walking_mode_activity"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context=".fragments.HomeFragment">
 
-        <LinearLayout
-            android:id="@+id/ln"
+        <RelativeLayout
+            android:id="@+id/rlview"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:background="@color/main"
-            android:gravity="center"
-            android:orientation="horizontal"
-            android:padding="10dp">
+            android:layout_height="match_parent">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Sức khỏe"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-        </LinearLayout>
-
-        <androidx.core.widget.NestedScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@+id/ln"
-            android:fillViewport="true"
-            tools:ignore="SpeakableTextPresentCheck">
-
-            <LinearLayout
+            <RelativeLayout
+                android:id="@+id/ln"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/toolbar"
-                android:orientation="vertical"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/main"
                 android:padding="10dp">
-
-                <LinearLayout
-                    android:id="@+id/lnWalkingStep"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/shape_radius_corner"
-                    android:orientation="vertical"
-                    android:padding="10dp">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Bước chân"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:paddingStart="40dp"
-                        android:paddingEnd="40dp"
-                        android:weightSum="7"
-                        tools:ignore="RtlSymmetry">
-
-                        <TextView
-                            android:id="@+id/txtStepCurrent"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="3"
-                            android:text="1234"
-                            android:textAlignment="textEnd"
-                            android:textSize="25sp" />
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="/"
-                            android:textAlignment="center"
-                            android:textSize="25sp" />
-
-                        <TextView
-                            android:id="@+id/txtStepTarget"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="3"
-                            android:text="5000"
-                            android:textSize="25sp" />
-
-                    </LinearLayout>
-                </LinearLayout>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="5dp"
-                    android:text="Thông tin cơ bản"
-                    android:textSize="24sp"
+                    android:layout_centerHorizontal="true"
+                    android:text="Sức khỏe"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
 
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/rcvUser"
-                    android:layout_width="match_parent"
+                <ImageView
+                    android:id="@+id/btnResetStep"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="0dp"
-                    tools:listitem="@layout/item_user" />
-
-            </LinearLayout>
-
-        </androidx.core.widget.NestedScrollView>
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_baseline_autorenew_24" />
 
 
-    </RelativeLayout>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/btnAddUser"
-        android:layout_width="56dp"
-        android:layout_height="56dp"
-        android:layout_margin="@dimen/fab_margin"
-        android:background="@color/toolbar"
-        android:backgroundTint="@color/main"
-        android:contentDescription="add"
-        android:src="@drawable/ic_baseline_add_24"
-        app:layout_anchor="@id/rlview"
-        app:layout_anchorGravity="bottom|right|end" />
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+            </RelativeLayout>
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/ln"
+                android:fillViewport="true"
+                tools:ignore="SpeakableTextPresentCheck">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <RelativeLayout
+                        android:id="@+id/lnWalkingStep"
+                        android:layout_width="match_parent"
+                        android:layout_height="280dp"
+                        android:background="@drawable/shape_radius_corner"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <RelativeLayout
+                            android:id="@+id/target"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/mt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Mục tiêu của bạn: "
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/txtStepTarget"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toEndOf="@id/mt"
+                                android:text="5000"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toEndOf="@id/txtStepTarget"
+                                android:text=" bước"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/imgViewEditTarget"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="0dp"
+                                android:src="@drawable/ic_baseline_edit_24" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_below="@+id/target">
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                app:lottie_autoPlay="true"
+                                app:lottie_colorFilter="@color/main"
+                                app:lottie_loop="true"
+                                app:lottie_rawRes="@raw/editor_ab" />
+
+                            <TextView
+                                android:id="@+id/curStep"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="1000"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+
+                        <!--LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingStart="40dp"
+                            android:paddingEnd="40dp"
+                            android:weightSum="7"
+                            tools:ignore="RtlSymmetry">
+
+                            <TextView
+                                android:id="@+id/txtStepCurrent"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:text="1234"
+                                android:textAlignment="textEnd"
+                                android:textSize="25sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="/"
+                                android:textAlignment="center"
+                                android:textSize="25sp" />
+
+                            <TextView
+                                android:id="@+id/txtStepTarget"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:text="5000"
+                                android:textSize="25sp" />
+
+                        </LinearLayout-->
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:text="Thông tin cơ bản"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rcvUser"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        tools:listitem="@layout/item_user" />
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+
+        </RelativeLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnAddUser"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_margin="@dimen/fab_margin"
+            android:background="@color/toolbar"
+            android:backgroundTint="@color/main"
+            android:contentDescription="add"
+            android:src="@drawable/ic_baseline_add_24"
+            app:layout_anchor="@id/rlview"
+            app:layout_anchorGravity="bottom|right|end" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

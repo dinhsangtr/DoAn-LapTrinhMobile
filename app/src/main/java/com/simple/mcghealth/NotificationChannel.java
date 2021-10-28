@@ -7,11 +7,13 @@ import android.os.Build;
 public class NotificationChannel extends Application {
 
     public static final String CHANNEL_ID = "CHANNEL_1";
+    public static final String CHANNEL_ID2 = "CHANNEL_2";
 
     @Override
     public void onCreate() {
         super.onCreate();
         createNotificationChannel();
+        createNotificationChannel2();
     }
 
     private void createNotificationChannel() {
@@ -31,4 +33,23 @@ public class NotificationChannel extends Application {
             }
         }
     }
+
+    private void createNotificationChannel2() {
+        // Create the NotificationChannel, but only on API 26+ because
+        // the NotificationChannel class is new and not in the support library
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            CharSequence name = getString(R.string.channel_name1);
+            String description = getString(R.string.channel_description1);
+            int importance = NotificationManager.IMPORTANCE_DEFAULT;
+            android.app.NotificationChannel channel = new android.app.NotificationChannel(CHANNEL_ID2, name, importance);
+            channel.setDescription(description);
+            // Register the channel with the system; you can't change the importance
+            // or other notification behaviors after this
+            NotificationManager notificationManager = getSystemService(NotificationManager.class);
+            if(notificationManager!=null){
+                notificationManager.createNotificationChannel(channel);
+            }
+        }
+    }
+
 }

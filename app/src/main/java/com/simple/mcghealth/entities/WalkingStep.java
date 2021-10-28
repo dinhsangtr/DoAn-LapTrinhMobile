@@ -1,8 +1,6 @@
 package com.simple.mcghealth.entities;
 
-import androidx.annotation.Nullable;
 import androidx.room.Entity;
-import androidx.room.ForeignKey;
 import androidx.room.PrimaryKey;
 
 import lombok.Getter;
@@ -18,9 +16,15 @@ public class WalkingStep {
     @PrimaryKey(autoGenerate = true)
     private int id;
 
-    private String date;
     private int step;
-    private int idUser;
+    private int target;
+    private String date;
+
+    public WalkingStep(int step, int target, String date) {
+        this.step = step;
+        this.target = target;
+        this.date = date;
+    }
 
 
 }
