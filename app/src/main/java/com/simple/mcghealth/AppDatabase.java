@@ -10,6 +10,7 @@ import com.simple.mcghealth.dao.BmiDao;
 import com.simple.mcghealth.dao.MedicationTimeDao;
 import com.simple.mcghealth.dao.MedicineDao;
 import com.simple.mcghealth.dao.UserDao;
+import com.simple.mcghealth.dao.WalkingStepDao;
 import com.simple.mcghealth.entities.Bmi;
 import com.simple.mcghealth.entities.MedicationTime;
 import com.simple.mcghealth.entities.Medicine;
@@ -25,6 +26,7 @@ public abstract class AppDatabase extends RoomDatabase {
     //public abstract WalkingStep walkingStepDao();
     public abstract UserDao userDao();
     public abstract BmiDao bmiDao();
+    //public abstract WalkingStepDao walkingStepDao();
     //
 
 

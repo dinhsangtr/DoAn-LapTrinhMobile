@@ -3,6 +3,7 @@ package com.simple.mcghealth.dao;
 import androidx.room.Dao;
 import androidx.room.Insert;
 import androidx.room.Query;
+import androidx.room.Transaction;
 
 import com.simple.mcghealth.entities.Bmi;
 
@@ -25,6 +26,10 @@ public interface BmiDao {
     @Query("SELECT * FROM bmi WHERE idUser =:idUser ORDER BY id DESC LIMIT 1")
     Bmi getBMILast(int idUser);
 
+
+    @Transaction
+    @Query("DELETE FROM bmi ")
+    void deleteAllBmi();
 
 
 }

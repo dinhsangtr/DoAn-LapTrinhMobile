@@ -75,6 +75,15 @@
         <entry key="..\:/DoAn-LapTrinhMobile/app/src/main/res/layout/activity_setup_reminder.xml" value="0.25416666666666665" />
         <entry key="..\:/DoAn-LapTrinhMobile/app/src/main/res/layout/activity_thong_tin_ddactivity.xml" value="0.25416666666666665" />
         <entry key="..\:/DoAn-LapTrinhMobile/app/src/main/res/layout/activity_thuc_don.xml" value="0.25416666666666665" />
+
+        <entry key="..\:/Project_Android/DA/app/src/main/res/layout/activity_about.xml" value="0.15760869565217392" />
+        <entry key="..\:/Project_Android/DA/app/src/main/res/layout/activity_about1.xml" value="0.15760869565217392" />
+        <entry key="..\:/Project_Android/DA/app/src/main/res/layout/activity_add_info_main.xml" value="0.11865942028985507" />
+        <entry key="..\:/Project_Android/DA/app/src/main/res/layout/activity_item1_acrivity.xml" value="0.26875" />
+        <entry key="..\:/Project_Android/DA/app/src/main/res/layout/fragment_health.xml" value="0.15760869565217392" />
+        <entry key="..\:/Project_Android/DA/app/src/main/res/layout/fragment_setting.xml" value="0.26875" />
+        <entry key="..\:/Project_Android/DA/app/src/main/res/layout/item_healt.xml" value="0.15760869565217392" />
+
       </map>
     </option>
   </component>

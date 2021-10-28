@@ -30,28 +30,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MCGHealth">
         <activity
+            android:name=".activities.Item1Acrivity"
+            android:exported="true" />
+        <activity
             android:name=".activities.ThongTinCaNhanActivity"
             android:exported="true"/>
         <activity
             android:name=".activities.About3"
-            android:exported="true"/>
-
-
+            android:exported="true" />
         <activity
             android:name=".activities.About4"
-            android:exported="true"/>
-
-
+            android:exported="true" />
         <activity
             android:name=".activities.About2"
-            android:exported="true"/>
-
-
+            android:exported="true" />
         <activity
             android:name=".activities.About1"
-            android:exported="true"/>
-
-
+            android:exported="true" />
         <activity
             android:name=".activities.AddInfoMainActivity"
             android:exported="true" />

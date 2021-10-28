@@ -1,14 +1,25 @@
 package com.simple.mcghealth.fragments;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.Toast;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 
+import com.simple.mcghealth.AppDatabase;
 import com.simple.mcghealth.R;
+import com.simple.mcghealth.activities.IntroFTActivity;
+import com.simple.mcghealth.dao.BmiDao;
+import com.simple.mcghealth.entities.User;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -22,6 +33,9 @@ public class SettingFragment extends Fragment {
 
     private String mParam1;
     private String mParam2;
+    private Button btnReset;
+    private AppDatabase appDatabase;
+    private Activity activity;
 
     public SettingFragment() {
     }
@@ -38,6 +52,7 @@ public class SettingFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
@@ -50,11 +65,48 @@ public class SettingFragment extends Fragment {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy_MM_dd");
         return simpleDateFormat.format(calendar.getTime());
     }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_setting, container, false);
 
+        btnReset = view.findViewById(R.id.btnReset);
+        this.btnReset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AlertDialog.Builder b = new AlertDialog.Builder(getActivity());
+                b.setTitle("Xác nhận");
+                b.setMessage("Bạn có muốn cài đặt lại hệ thống?");
+
+                b.setPositiveButton("Đồng ý", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        try {
+                            appDatabase = AppDatabase.getInstance(getActivity().getApplicationContext());
+                            appDatabase.bmiDao().deleteAllBmi();
+                            appDatabase.medicationTimeDao().deleteAllMedication_Time();
+                            appDatabase.medicineDao().deleteAllMedicine();
+                            //appDatabase.walkingStepDao().deleteAllWalking_Steps();
+                            appDatabase.userDao().deleteAllUser();
+
+                            Intent intent = new Intent(getActivity(), IntroFTActivity.class);
+                            startActivity(intent);
+                        }
+                        catch (Exception e){
+                            Toast.makeText(getActivity(), "null Infomation", Toast.LENGTH_SHORT).show();
+                           // Log.e("Error delete ",e.toString());
+                        }
+                    }
+                });
+                b.setNegativeButton("Không đồng ý", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.cancel();
+                    }
+                });
+                AlertDialog al = b.create();
+                al.show();
+            }
+        });
         return view;
     }
 }

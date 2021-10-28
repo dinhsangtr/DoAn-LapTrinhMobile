@@ -37,20 +37,26 @@ public interface UserDao {
     @Query("SELECT * FROM user ORDER BY Id")
     List<User> getAllUser();
 
-    //getAll
+    //getUser1
     @Transaction
     @Query("SELECT * FROM user ORDER BY Id DESC LIMIT 1")
     User getUserLast();
 
+
+    //gettop1 user
     @Transaction
     @Query("SELECT * FROM user Order By id ASC LIMIT 1")
     User getTOP1() ;
+
+
+    @Transaction
+    @Query("DELETE FROM user ")
+    void deleteAllUser( );
 
     //getId
     @Transaction
     @Query("SELECT * FROM user WHERE Id =:id")
     User getUserById(int id);
-
 
 
 }
