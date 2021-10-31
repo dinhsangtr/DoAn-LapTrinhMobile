@@ -64,7 +64,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="7"
-                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris ..." />
+                    android:text="MCG Health làm mọi thứ đúng cách. Nó rất dễ sử dụng và thiết lập. Bạn cũng có thể thêm hình dạng và màu sắc của viên thuốc, cũng như nhận lời nhắc uống loại thuốc đó vào đúng thời điểm. Bạn thậm chí có thể cài đặt báo lại lời nhắc sau một giờ, trong trường hợp bạn không thể uống thuốc vào thời điểm chính xác trong lời nhắc...." />
             </LinearLayout>
 
             <LinearLayout
@@ -96,7 +96,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
-                        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris ..." />
+                        android:text="Chạy bộ là môn thể thao được rất nhiều người luyện tập, nhưng không phải ai cũng biết hết những lợi ích quý hơn vàng mà thói quen tập chạy buổi sáng mang lại.Không chỉ giúp cho bạn có được một sức khỏe bền bỉ, một vóc dáng cân đối .." />
                 </LinearLayout>
 
                 <LinearLayout
@@ -121,7 +121,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
-                        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris ..." />
+                        android:text="Bất kỳ độ tuổi nào cũng nên duy trì một thói quen ăn uống lành mạnh và đảm bảo các thành phần dinh dưỡng. Tháp dinh dưỡng sẽ cung cấp các thông tin về những thực phẩm nên lựa chọn trong chế độ ăn uống hàng ngày..." />
                 </LinearLayout>
             </LinearLayout>
 
