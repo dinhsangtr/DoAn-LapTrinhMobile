@@ -17,22 +17,40 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Title"
+            android:text="Hướng dẫn sử dụng"
             android:textSize="20sp"
             android:textStyle="bold" />
     </androidx.appcompat.widget.Toolbar>
 
-    <TextView
-        android:id="@+id/content"
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_below="@id/toolbarAddDrug1"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/logo" />
+
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/toolbarAddDrug1"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="chạy bộ là"
+        android:layout_below="@+id/imgLogo"
         android:layout_marginTop="10dp"
-        android:background="@drawable/custom_practice"
-        android:textSize="20dp"
-        android:textColor="@color/black"/>
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/custom_practice">
 
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+
+            android:text="Khi vào app bạn có thể đọc thông tin của app, sau đó nhập thông tin cá nhân theo form để chúng tôi biết về BMI của bạn và đưa ra bài tập luyện hay theo thông tin sức khỏe của bạn. Bước chân hằng ngày của bạn sẽ được chung tôi ghi lại và tính chỉ số calo hao phí. \n Tiếp đến bạn có thể nhập thông tin thuốc uống hiện tại của bạn để chúng tôi nhắc lịch uống thuốc, tránh tình trạng bạn quên hay bỏ cử thuốc làm ảnh hưởng đến phát đồ điều trị bệnh của bạn.\n Khi bạn cần sự trợ giúp, có thể liên hệ với chúng tôi - Nhà phát triễn-  thông qua thông tin nhà phát triễn trong trang cài đặt. Cuối cùng, khi bạn muốn kết thúc phát đồ điều trị và thay đổi lại tất cả thông tin của mình, bạn có thể chọn về mặt định để xóa hết thông tin của bạn và nhập thông tin mới."
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+    </ScrollView>
 </RelativeLayout>
