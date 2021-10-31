@@ -14,10 +14,8 @@
 
 
     <color name="GreenBackground">#22b428</color>
-
-
-
-
+    <color name="pink_light">#F4EFEF</color>
+    <color name="pink">#EDD9D9</color>
 
     <!-- dots inactive colors -->
     <color name="dot_dark_screen">#026499</color>

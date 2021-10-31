@@ -1,54 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:layout_margin="50dp">
-
+    android:layout_gravity="center"
+    android:background="@color/pink_light"
+    android:orientation="vertical">
 
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:orientation="vertical"
-        android:background="#74DCA8">
+        android:layout_height="wrap_content"
+        android:background="#74DCA8"
+        android:orientation="vertical">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="24sp"
             android:gravity="center"
-            android:text="Chỉnh sửa">
+            android:text="Chỉnh sửa"
+            android:textSize="24sp">
 
 
         </TextView>
-
 
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
-        <LinearLayout
+
+        <!--LinearLayout
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:background="@drawable/custom_dialogchinhsua"
             android:layout_marginTop="5dp"
-            >
+            android:background="@drawable/custom_dialogchinhsua">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="24sp"
-                android:textStyle="bold"
+                android:gravity="center"
                 android:text="Thông tin sức khỏe"
-                android:gravity="center">
-
+                android:textSize="24sp"
+                android:textStyle="bold">
             </TextView>
-
-        </LinearLayout>
-
+        </LinearLayout-->
 
 
         <LinearLayout
@@ -120,35 +117,34 @@
     </LinearLayout>
 
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="2"
         android:layout_margin="10dp"
-        android:gravity="center">
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2">
 
 
         <Button
             android:id="@+id/btnThoat"
-            android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Thoát"
-            android:textColor="@color/black"
             android:layout_gravity="center"
-            android:layout_marginEnd="5dp"/>
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:text="Thoát"
+            android:textColor="@color/black" />
 
         <Button
             android:id="@+id/btnLuu"
-            android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Lưu"
             android:layout_gravity="center"
             android:layout_marginStart="5dp"
-            android:textColor="@color/black"/>
+            android:layout_weight="1"
+            android:text="Lưu"
+            android:textColor="@color/black" />
 
     </LinearLayout>
 

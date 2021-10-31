@@ -7,7 +7,7 @@
     >
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbarAddDrug3"
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="@color/main">
@@ -23,22 +23,25 @@
     </androidx.appcompat.widget.Toolbar>
 
     <ImageView
+        android:id="@+id/image1"
         android:layout_width="wrap_content"
         android:layout_height="200dp"
+        android:layout_below="@+id/toolbar"
         android:layout_marginTop="5dp"
-        android:layout_below="@+id/toolbarAddDrug3"
-        android:src="@drawable/logo"
-        android:id="@+id/image1"/>
+        android:src="@drawable/abount_running_man" />
+
     <TextView
+        android:padding="10dp"
+        android:justificationMode="inter_word"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/image1"
-        android:layout_marginTop="10dp"
         android:layout_marginStart="3dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="3dp"
+        android:background="#F4EFEF"
         android:text="Chạy bộ là môn thể thao được rất nhiều người luyện tập, nhưng không phải ai cũng biết hết những lợi ích quý hơn vàng mà thói quen tập chạy buổi sáng mang lại. Không chỉ giúp cho bạn có được một sức khỏe bền bỉ, một vóc dáng cân đối mà còn đẩy lùi một số chứng bệnh, có được tinh thần thoải mái và năng lượng tràn đầy trước khi bắt đầu một ngày mới."
-        android:textSize="18dp"
-        android:textStyle="bold"
         android:textColor="@color/black"
-        android:background="#F4EFEF"/>
+        android:textSize="18dp"
+        android:textStyle="bold" />
 </RelativeLayout>

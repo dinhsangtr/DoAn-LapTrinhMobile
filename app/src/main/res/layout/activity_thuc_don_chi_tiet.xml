@@ -11,10 +11,10 @@
         android:textColor="#fff"
         android:gravity="center"
         android:id="@+id/textviewtenchedo"
-        android:background="#21a725"
+        android:background="@color/main"
         android:paddingStart="15dp"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="?attr/actionBarSize"
         android:text="Chế độ ăn tăng cân"/>
 
     <ScrollView

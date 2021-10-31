@@ -10,7 +10,7 @@
         android:id="@+id/toolbarRemind"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/toolbar">
+        android:background="@color/main">
 
         <TextView
             android:layout_width="wrap_content"

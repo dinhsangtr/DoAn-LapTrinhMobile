@@ -1,132 +1,151 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#dfdfd3" android:layout_width="match_parent" android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dfdfd3"
+    android:orientation="vertical">
+
     <TextView
+        android:id="@+id/textviewtenchedo"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/main"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:text="Chế độ ăn đủ dưỡng chất"
+        android:textColor="#fff"
         android:textSize="20dp"
         android:textStyle="bold"
-        android:textColor="#fff"
-        android:gravity="center"
-        android:id="@+id/textviewtenchedo"
-        android:background="#21a725"
-        android:paddingLeft="15dp"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:text="Chế độ ăn đủ dưỡng chất"/>
+        tools:ignore="TextContrastCheck" />
+
     <ScrollView
-        android:scrollbars="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fillViewport="true">
+        android:fillViewport="true"
+        android:scrollbars="vertical">
+
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
             <LinearLayout
-                android:orientation="vertical"
-                android:background="#fff"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="vertical">
 
                 <TextView
-                    android:textSize="16sp"
-                    android:textStyle="italic"
-                    android:textColor="@color/black"
-                    android:gravity="center_vertical"
-                    android:background="@drawable/custom_onguyenta"
-                    android:padding="6dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginRight="5dp"
-                    android:text="Cần “sạc” năng lượng điều đặn: Cần phân bố năng lượng cho các bữa ăn trong ngày, chia nhỏ các bữa ăn trong ngày, giảm dần lượng vào cuối ngày. - Trẻ em: Bữa sáng 30%, bữa trưa 35%, bữa tối 25%, bữa phụ 10%. - Người lớn: Bữa sáng 30%, bữa trưa 40%, bữa tối 25%, bữa phụ 5%. "/>
+                    android:background="@drawable/custom_onguyenta"
+                    android:gravity="center_vertical"
+                    android:padding="6dp"
+                    android:text="Cần “sạc” năng lượng điều đặn: Cần phân bố năng lượng cho các bữa ăn trong ngày, chia nhỏ các bữa ăn trong ngày, giảm dần lượng vào cuối ngày. - Trẻ em: Bữa sáng 30%, bữa trưa 35%, bữa tối 25%, bữa phụ 10%. - Người lớn: Bữa sáng 30%, bữa trưa 40%, bữa tối 25%, bữa phụ 5%. "
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
                 <TextView
-                    android:textSize="16sp"
-                    android:textStyle="italic"
-                    android:textColor="@color/black"
-                    android:gravity="center_vertical"
-                    android:background="@drawable/custom_onguyenta"
-                    android:padding="6dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginRight="5dp"
-                    android:text="Cân đối nhóm chất sinh năng lượng: chia một cách khoa học 3 nhóm dinh dưỡng tạo ra năng lượng thiết yếu cho cơ thể đó là: bột đường- đạm và béo, tỷ lệ cơ bản trong một ngày là: - Người lớn: 60% chất bột đường- 15% chất đạm- 25% chất béo. - Trẻ từ 10 -16 tuổi: 55% chất bột đường – 15% chất đạm- 25% chất béo. - Trẻ nhỏ: 50% chất bột đường – 15% chất đạm – 35% chất béo. "/>
+                    android:background="@drawable/custom_onguyenta"
+                    android:gravity="center_vertical"
+                    android:padding="6dp"
+                    android:text="Cân đối nhóm chất sinh năng lượng: chia một cách khoa học 3 nhóm dinh dưỡng tạo ra năng lượng thiết yếu cho cơ thể đó là: bột đường- đạm và béo, tỷ lệ cơ bản trong một ngày là: - Người lớn: 60% chất bột đường- 15% chất đạm- 25% chất béo. - Trẻ từ 10 -16 tuổi: 55% chất bột đường – 15% chất đạm- 25% chất béo. - Trẻ nhỏ: 50% chất bột đường – 15% chất đạm – 35% chất béo. "
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
                 <TextView
-                    android:textSize="16sp"
-                    android:textStyle="italic"
-                    android:textColor="@color/black"
-                    android:gravity="center_vertical"
-                    android:background="@drawable/custom_onguyenta"
-                    android:padding="6dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginRight="5dp"
-                    android:text="Đối với trẻ em chất béo bão hòa và không bảo hòa điều rất cần thiết cho sự phát triển trí não. Còn đối với người trưởng thành, chất béo đóng vai trò dưỡng da, tóc và ngăn chặn sự “héo hon” do quá trình láo hóa tự nhiên."/>
+                    android:background="@drawable/custom_onguyenta"
+                    android:gravity="center_vertical"
+                    android:padding="6dp"
+                    android:text="Đối với trẻ em chất béo bão hòa và không bảo hòa điều rất cần thiết cho sự phát triển trí não. Còn đối với người trưởng thành, chất béo đóng vai trò dưỡng da, tóc và ngăn chặn sự “héo hon” do quá trình láo hóa tự nhiên."
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
                 <TextView
-                    android:textSize="16sp"
-                    android:textStyle="italic"
-                    android:textColor="@color/black"
-                    android:gravity="center_vertical"
-                    android:background="@drawable/custom_onguyenta"
-                    android:padding="6dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginRight="5dp"
-                    android:text="Bổ sung vitamin, khoáng chất và chất không sinh năng lượng: - Vitamin B1: 1,5 mg/1.000 calo. - Canxi: 600-1.000 mg/ngày - Chất xơ: 30g/ngày "/>
+                    android:background="@drawable/custom_onguyenta"
+                    android:gravity="center_vertical"
+                    android:padding="6dp"
+                    android:text="Bổ sung vitamin, khoáng chất và chất không sinh năng lượng: - Vitamin B1: 1,5 mg/1.000 calo. - Canxi: 600-1.000 mg/ngày - Chất xơ: 30g/ngày "
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
                 <TextView
-                    android:textSize="16sp"
-                    android:textStyle="italic"
-                    android:textColor="@color/black"
-                    android:gravity="center_vertical"
-                    android:background="@drawable/custom_onguyenta"
-                    android:padding="6dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginRight="5dp"
-                    android:text="Xác đinh nhu cầu năng lượng. Nếu ít hoạt động bạn nên hạn chế carbonhydrate trong khẩu phần ăn. Nhưng nếu có luyện tập thể thao, khẩu phần ăn cần được tăng về cả chất lẫn lượng. - Cân đối các nhóm chất dinh dưỡng đa lượng, không nhóm nào quá nhiều cũng không nhóm nào quá ít, đảm bảo có đủ tối thiểu 4 nhóm: đạm-béo-đường-xơ/ngày. - Phân bố đều các bữa ăn trong ngày, giảm dần về lượng, chất béo, chất đạm vào cuối ngày. "/>
+                    android:background="@drawable/custom_onguyenta"
+                    android:gravity="center_vertical"
+                    android:padding="6dp"
+                    android:text="Xác đinh nhu cầu năng lượng. Nếu ít hoạt động bạn nên hạn chế carbonhydrate trong khẩu phần ăn. Nhưng nếu có luyện tập thể thao, khẩu phần ăn cần được tăng về cả chất lẫn lượng. - Cân đối các nhóm chất dinh dưỡng đa lượng, không nhóm nào quá nhiều cũng không nhóm nào quá ít, đảm bảo có đủ tối thiểu 4 nhóm: đạm-béo-đường-xơ/ngày. - Phân bố đều các bữa ăn trong ngày, giảm dần về lượng, chất béo, chất đạm vào cuối ngày. "
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
                 <LinearLayout
-                    android:padding="6dp"
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
+                    android:padding="6dp"
                     android:weightSum="2">
+
                     <Button
-                        android:textColor="@color/black"
-                        android:layout_gravity="center"
                         android:id="@+id/buttongoiythucdon"
-                        android:background="@drawable/custom_goiythucdon"
-                        android:paddingLeft="5dp"
-                        android:paddingRight="5dp"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
+                        android:layout_gravity="center"
                         android:layout_marginTop="8dp"
                         android:layout_marginRight="2dp"
                         android:layout_marginBottom="20dp"
-                        android:text="Gợi Ý Thực Đơn 7 Ngày"
                         android:layout_weight="1"
-                        android:textAllCaps="false"/>
-                    <Button
-                        android:textColor="@color/black"
-                        android:layout_gravity="center"
-                        android:id="@+id/buttonthamkhaothucdon"
                         android:background="@drawable/custom_goiythucdon"
                         android:paddingLeft="5dp"
                         android:paddingRight="5dp"
+                        android:text="Gợi Ý Thực Đơn 7 Ngày"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black" />
+
+                    <Button
+                        android:id="@+id/buttonthamkhaothucdon"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
+                        android:layout_gravity="center"
                         android:layout_marginLeft="2dp"
                         android:layout_marginTop="8dp"
                         android:layout_marginBottom="20dp"
-                        android:text="Tham khảo thực đơn"
                         android:layout_weight="1"
-                        android:textAllCaps="false"/>
+                        android:background="@drawable/custom_goiythucdon"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="Tham khảo thực đơn"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        tools:ignore="TouchTargetSizeCheck" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

@@ -55,16 +55,20 @@
 
                 <ImageView
                     android:layout_width="1dp"
-                    android:layout_height="100dp"
+                    android:layout_height="120dp"
                     android:layout_weight="3"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/logo" />
+                    android:padding="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/about_clipboard" />
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="7"
-                    android:text="MCG Health làm mọi thứ đúng cách. Nó rất dễ sử dụng và thiết lập. Bạn cũng có thể thêm hình dạng và màu sắc của viên thuốc, cũng như nhận lời nhắc uống loại thuốc đó vào đúng thời điểm. Bạn thậm chí có thể cài đặt báo lại lời nhắc sau một giờ, trong trường hợp bạn không thể uống thuốc vào thời điểm chính xác trong lời nhắc...." />
+                    android:justificationMode="inter_word"
+                    android:padding="5dp"
+                    android:text="MCG Health làm mọi thứ đúng cách. Nó rất dễ sử dụng và thiết lập. Bạn cũng có thể thêm hình dạng và màu sắc của viên thuốc, cũng như nhận lời nhắc uống loại thuốc đó vào đúng thời điểm. Bạn thậm chí có thể cài đặt báo lại lời nhắc sau một giờ, ..."
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <LinearLayout
@@ -89,14 +93,18 @@
                     <ImageView
                         android:layout_width="150dp"
                         android:layout_height="150dp"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/logo" />
+                        android:padding="15dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/abount_running_man" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
-                        android:text="Chạy bộ là môn thể thao được rất nhiều người luyện tập, nhưng không phải ai cũng biết hết những lợi ích quý hơn vàng mà thói quen tập chạy buổi sáng mang lại.Không chỉ giúp cho bạn có được một sức khỏe bền bỉ, một vóc dáng cân đối .." />
+                        android:justificationMode="inter_word"
+                        android:padding="5dp"
+                        android:text="Chạy bộ là môn thể thao được rất nhiều người luyện tập, nhưng không phải ai cũng biết hết những lợi ích quý hơn vàng mà thói quen tập chạy buổi sáng mang lại.Không chỉ giúp cho bạn có được một sức khỏe bền bỉ, một vóc dáng cân đối .."
+                        android:textStyle="bold" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -113,15 +121,19 @@
                     <ImageView
                         android:layout_width="150dp"
                         android:layout_height="150dp"
+                        android:padding="15dp"
                         android:paddingTop="10dp"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/logo" />
+                        android:scaleType="fitXY"
+                        android:src="@drawable/about_diet" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
-                        android:text="Bất kỳ độ tuổi nào cũng nên duy trì một thói quen ăn uống lành mạnh và đảm bảo các thành phần dinh dưỡng. Tháp dinh dưỡng sẽ cung cấp các thông tin về những thực phẩm nên lựa chọn trong chế độ ăn uống hàng ngày..." />
+                        android:justificationMode="inter_word"
+                        android:padding="5dp"
+                        android:text="Bất kỳ độ tuổi nào cũng nên duy trì một thói quen ăn uống lành mạnh và đảm bảo các thành phần dinh dưỡng. Tháp dinh dưỡng sẽ cung cấp các thông tin về những thực phẩm nên lựa chọn trong chế độ ăn uống hàng ngày..."
+                        android:textStyle="bold" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -148,7 +160,7 @@
             android:paddingTop="15dp"
             android:paddingEnd="25dp"
             android:paddingBottom="15dp"
-            android:text="Tiếp tục sủ dụng"
+            android:text="Tiếp tục sử dụng"
             android:textAllCaps="false"
             android:textColor="@color/black"
             android:textSize="17sp" />

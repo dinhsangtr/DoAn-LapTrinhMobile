@@ -27,7 +27,7 @@
 
     <ExpandableListView
         android:layout_width="match_parent"
-        android:listSelector="#DEA4E4"
+        android:listSelector="@color/pink"
         android:dividerHeight="1dp"
         android:layout_height="match_parent"
         android:id="@+id/explv"

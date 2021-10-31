@@ -3,56 +3,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_gravity="center"
     android:orientation="vertical"
-    android:layout_margin="50dp">
-
-
+    android:padding="2dp">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:orientation="vertical"
-        android:background="#74DCA8">
+        android:layout_height="wrap_content"
+        android:background="#74DCA8"
+        android:orientation="vertical">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="24sp"
             android:gravity="center"
-            android:text="Chỉnh sửa">
-
-
+            android:text="Chỉnh sửa"
+            android:textSize="24sp">
         </TextView>
-
-
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:orientation="vertical"
+        android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        >
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:background="@drawable/custom_dialogchinhsua"
-            >
+            android:background="@drawable/custom_dialogchinhsua">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="24sp"
-                android:textAlignment="center"
-                android:textStyle="bold"
+                android:gravity="center"
                 android:text="Thông tin cơ bản"
-                android:gravity="center">
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold">
 
             </TextView>
 
 
         </LinearLayout>
-
 
 
         <EditText
@@ -61,77 +55,76 @@
             android:layout_height="wrap_content"
             android:background="@android:drawable/editbox_background"
             android:ems="10"
-            android:padding="10dp"
-            android:inputType="textPersonName"
             android:hint="Tên Người Dùng"
-            tools:ignore="TextFields" />
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            tools:ignore="TextFields,TouchTargetSizeCheck" />
+
         <TextView
             android:id="@+id/txtAge"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10dp"
             android:background="@android:drawable/editbox_background"
             android:ems="10"
-            android:textSize="17sp"
+            android:padding="10dp"
             android:text="2000"
+            android:textSize="17sp"
             tools:ignore="TextFields" />
 
         <EditText
             android:id="@+id/txtHeight"
-            android:padding="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:drawable/editbox_background"
             android:ems="10"
-            android:inputType="numberDecimal"
             android:hint="Chiều Cao "
-            tools:ignore="TextFields" />
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            tools:ignore="TextFields,TouchTargetSizeCheck" />
 
         <EditText
             android:id="@+id/txtWeight"
-            android:background="@android:drawable/editbox_background"
             android:layout_width="match_parent"
-            android:padding="10dp"
             android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_background"
             android:ems="10"
-            android:inputType="numberDecimal"
             android:hint="Cân Nặng "
-            tools:ignore="TextFields" />
-
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            tools:ignore="TextFields,TouchTargetSizeCheck" />
 
 
     </LinearLayout>
 
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="2"
         android:layout_margin="10dp"
-        android:gravity="center">
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2">
 
 
         <Button
             android:id="@+id/btnThoat"
-            android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Thoát"
-            android:textColor="@color/black"
             android:layout_gravity="center"
-            android:layout_marginEnd="5dp"/>
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:text="Thoát"
+            android:textColor="@color/black" />
 
         <Button
             android:id="@+id/btnLuu"
-            android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Lưu"
             android:layout_gravity="center"
             android:layout_marginStart="5dp"
-            android:textColor="@color/black"/>
+            android:layout_weight="1"
+            android:text="Lưu"
+            android:textColor="@color/black" />
 
     </LinearLayout>
 

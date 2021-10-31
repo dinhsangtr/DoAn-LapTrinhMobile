@@ -1,11 +1,11 @@
 package com.simple.mcghealth.activities;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.simple.mcghealth.R;
 import com.simple.mcghealth.utils.MyPreferences;
@@ -44,6 +44,7 @@ public class IntroFTActivity extends AppCompatActivity {
 
         txtPolicy.setOnClickListener(view -> {
             //myPreferences.setFirstTimeLaunch(false);
+            startActivity(new Intent(this, About1.class));
         });
     }
 }

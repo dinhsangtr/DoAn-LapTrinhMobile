@@ -45,6 +45,7 @@
             </LinearLayout>
 
             <TextView
+                android:justificationMode="inter_word"
                 android:id="@+id/tvContent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

@@ -7,7 +7,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
@@ -100,7 +99,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserViewWriter
 
 
 
-                    Toast.makeText(activity, "click " + user.getFullName(), Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(activity, "click " + user.getFullName(), Toast.LENGTH_SHORT).show();
                 }
 
             }

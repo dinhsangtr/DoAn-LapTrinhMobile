@@ -1,11 +1,9 @@
 package com.simple.mcghealth.fragments;
 
-import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,12 +21,7 @@ import com.simple.mcghealth.activities.InfoAppActivity;
 import com.simple.mcghealth.activities.InfoDevelopers;
 import com.simple.mcghealth.activities.IntroFTActivity;
 import com.simple.mcghealth.activities.UserManualActivity;
-import com.simple.mcghealth.dao.BmiDao;
-import com.simple.mcghealth.entities.User;
 import com.simple.mcghealth.utils.MyPreferences;
-
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
 
 public class SettingFragment extends Fragment {
 
@@ -69,13 +62,6 @@ public class SettingFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
-    }
-
-    public static String getKeyToday() {
-        Calendar calendar = Calendar.getInstance();
-        @SuppressLint("SimpleDateFormat")
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy_MM_dd");
-        return simpleDateFormat.format(calendar.getTime());
     }
 
     @Override

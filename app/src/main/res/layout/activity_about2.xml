@@ -3,12 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-
-    >
+    android:layout_height="match_parent">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbarAddDrug2"
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="@color/main">
@@ -24,28 +22,36 @@
     </androidx.appcompat.widget.Toolbar>
 
     <ImageView
+        android:id="@+id/image1"
         android:layout_width="wrap_content"
         android:layout_height="200dp"
+        android:layout_below="@+id/toolbar"
         android:layout_marginTop="5dp"
-        android:layout_below="@+id/toolbarAddDrug2"
-        android:src="@drawable/logo"
-        android:id="@+id/image1"/>
-    <TextView
+        android:src="@drawable/abount_medicine" />
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_below="@+id/image1"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="3dp"
-        android:layout_marginEnd="3dp"
-        android:text="MCG Health làm mọi thứ đúng cách. Nó rất dễ sử dụng và thiết lập. Bạn cũng có thể thêm hình dạng và màu sắc của viên thuốc, cũng như nhận lời nhắc uống loại thuốc đó vào đúng thời điểm. Bạn thậm chí có thể cài đặt báo lại lời nhắc sau một giờ, trong trường hợp bạn không thể uống thuốc vào thời điểm chính xác trong lời nhắc.
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="3dp"
+            android:background="#F4EFEF"
+            android:justificationMode="inter_word"
+            android:padding="10dp"
+            android:text="MCG Health làm mọi thứ đúng cách. Nó rất dễ sử dụng và thiết lập. Bạn cũng có thể thêm hình dạng và màu sắc của viên thuốc, cũng như nhận lời nhắc uống loại thuốc đó vào đúng thời điểm. Bạn thậm chí có thể cài đặt báo lại lời nhắc sau một giờ, trong trường hợp bạn không thể uống thuốc vào thời điểm chính xác trong lời nhắc.
 Nhưng phần tốt nhất của MCG Health là nó cho phép bạn thêm người phụ thuộc và liều lượng thuốc của họ. Vì vậy, nếu những người thân yêu của bạn hay quên uống thuốc đúng giờ, hãy tạo ra một profile cho họ và thêm lịch trình của họ vào. Bạn thậm chí có thể cài đặt MediSafe trên điện thoại của họ và liên kết cả hai ứng dụng (của bạn và của người thân), để bạn có thể thiết lập lời nhắc và kích hoạt trên cả hai điện thoại.
 Một số tính năng của MCG Health chỉ có sẵn trong phiên bản cao cấp, và nếu bạn chịu trách nhiệm về việc uống thuốc cho cả gia đình, điều đó sẽ rất đáng giá. Nhưng dù sao, hãy thử phiên bản miễn phí trước đã.
 "
-        android:textSize="16dp"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:background="#F4EFEF"/>
-
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </ScrollView>
 
 
 </RelativeLayout>

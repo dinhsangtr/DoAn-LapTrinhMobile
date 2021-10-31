@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_height="match_parent">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbarAddDrug"
@@ -31,18 +31,19 @@
         android:orientation="horizontal"
         android:weightSum="10">
 
-        <ImageButton
-            android:layout_width="wrap_content"
+        <ImageView
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_marginStart="5dp"
-            android:layout_weight="4"
-            android:src="@drawable/m_calendar" />
+            android:layout_weight="2"
+            android:padding="10dp"
+            android:src="@drawable/setting_cauhinh" />
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:layout_weight="6"
+            android:layout_weight="8"
             android:text="Cài Đặt Cấu Hình"
             android:textAlignment="center"
             android:textSize="22dp"
@@ -62,17 +63,19 @@
         android:orientation="horizontal"
         android:weightSum="10">
 
-        <ImageButton
-            android:layout_width="wrap_content"
+        <ImageView
+            android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="4"
-            android:src="@drawable/m_calendar" />
+            android:layout_marginStart="5dp"
+            android:layout_weight="2"
+            android:padding="10dp"
+            android:src="@drawable/setting_manual_book" />
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:layout_weight="6"
+            android:layout_weight="8"
             android:text="Hướng dẫn sử dụng"
             android:textAlignment="center"
             android:textSize="22dp"
@@ -92,17 +95,19 @@
         android:orientation="horizontal"
         android:weightSum="10">
 
-        <ImageButton
-            android:layout_width="wrap_content"
+        <ImageView
+            android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="4"
-            android:src="@drawable/m_calendar" />
+            android:layout_marginStart="5dp"
+            android:layout_weight="2"
+            android:padding="10dp"
+            android:src="@drawable/setting_info" />
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:layout_weight="6"
+            android:layout_weight="8"
             android:text="Thông Tin Ứng Dụng"
             android:textAlignment="center"
             android:textSize="22dp"
@@ -122,17 +127,19 @@
         android:orientation="horizontal"
         android:weightSum="10">
 
-        <ImageButton
-            android:layout_width="wrap_content"
+        <ImageView
+            android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="4"
-            android:src="@drawable/m_calendar" />
+            android:layout_marginStart="5dp"
+            android:layout_weight="2"
+            android:padding="10dp"
+            android:src="@drawable/setting_coding" />
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:layout_weight="6"
+            android:layout_weight="8"
             android:text="Thông Tin Nhà Phát Triễn"
             android:textAlignment="center"
             android:textSize="22dp"
@@ -152,35 +159,39 @@
         android:orientation="horizontal"
         android:weightSum="10">
 
-        <ImageButton
-            android:layout_width="wrap_content"
+        <ImageView
+            android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="4"
-            android:src="@drawable/m_calendar" />
+            android:layout_marginStart="5dp"
+            android:layout_weight="2"
+            android:padding="10dp"
+            android:src="@drawable/setting_help" />
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:layout_weight="6"
+            android:layout_weight="8"
             android:text="Trợ Giúp"
             android:textAlignment="center"
             android:textSize="22dp"
             android:textStyle="bold" />
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/layout5"
-        android:gravity="center"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
         <Button
             android:id="@+id/btnReset"
             android:layout_width="wrap_content"
-            android:background="@drawable/custom_button_color"
+            android:layout_height="50dp"
 
-            android:layout_height="60dp"
+            android:background="@drawable/custom_button_color"
             android:text="Mặc Định" />
     </LinearLayout>
 </RelativeLayout>

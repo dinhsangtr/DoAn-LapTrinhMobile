@@ -1,162 +1,176 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
-
-    <LinearLayout
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="#74DCA8"
-        android:orientation="vertical">
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/main">
 
         <TextView
             android:id="@+id/txtTenNguoiDung"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
+            android:layout_gravity="center"
             android:text="Trương Đình Sang"
-            android:textSize="35sp">
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
+    </androidx.appcompat.widget.Toolbar>
 
-        </TextView>
-
-
-    </LinearLayout>
-
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:layout_marginTop="10dp"
-        android:orientation="vertical">
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="#EACACA">
+            android:layout_height="wrap_content">
 
-            <TextView
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:id="@+id/ln1"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-                android:gravity="center"
-                android:text="Thông tin cơ bản"
-                android:textAlignment="center"
-                android:textSize="32sp"
-                android:textStyle="bold">
+                android:orientation="vertical">
 
-            </TextView>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="#EACACA">
 
-            <ImageView
-                android:id="@+id/btnSua1"
-                android:layout_width="wrap_content"
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="Thông tin cơ bản"
+                        android:textAlignment="center"
+                        android:textSize="22sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/btnSua1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/ic_baseline_edit_24" />
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/txtBirthday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Tuổi : "
+                    android:textSize="24sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/txtHeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Chiều Cao : "
+                    android:textSize="24sp"
+                    tools:ignore="TextFields,TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/txtWeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Cân Nặng : "
+                    android:textSize="24sp"
+                    tools:ignore="TextFields,TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/txtBMI"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Chỉ số BMI : "
+                    android:textSize="24sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"
-                android:layout_marginEnd="10dp"
-                android:src="@drawable/ic_baseline_edit_24" />
+                android:layout_below="@+id/ln1"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="#EACACA">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="Thông tin sức khỏe"
+                        android:textAlignment="center"
+                        android:textSize="22sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/btnSua2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/ic_baseline_edit_24" />
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/txtThongtinbenh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Thông tin bệnh : "
+                    android:textSize="24sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/txtTieuSu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Tiền sử bệnh : "
+                    android:textSize="24sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </LinearLayout>
+
         </RelativeLayout>
 
+    </ScrollView>
 
-        <TextView
-            android:id="@+id/txtBirthday"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:textSize="24sp"
-            android:text="Tuổi : " />
-
-        <TextView
-            android:id="@+id/txtHeight"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:textSize="24sp"
-            android:inputType="textPersonName"
-            android:text="Chiều Cao : "
-            tools:ignore="TextFields" />
-
-        <TextView
-            android:id="@+id/txtWeight"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="24sp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Cân Nặng : "
-            tools:ignore="TextFields" />
-
-        <TextView
-            android:id="@+id/txtBMI"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="24sp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Chỉ số BMI : " />
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:orientation="vertical">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="#EACACA">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:gravity="center"
-                android:text="Thông tin sức khỏe"
-                android:textAlignment="center"
-                android:textSize="32sp"
-                android:textStyle="bold">
-
-            </TextView>
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"
-                android:id="@+id/btnSua2"
-                android:layout_marginEnd="10dp"
-                android:src="@drawable/ic_baseline_edit_24" />
-        </RelativeLayout>
-
-
-
-
-
-        <TextView
-            android:id="@+id/txtThongtinbenh"
-            android:textSize="24sp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Thông tin bệnh : " />
-
-        <TextView
-            android:id="@+id/txtTieuSu"
-            android:textSize="24sp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Tiền sử bệnh : " />
-
-    </LinearLayout>
-
-
-</LinearLayout>
+</RelativeLayout>

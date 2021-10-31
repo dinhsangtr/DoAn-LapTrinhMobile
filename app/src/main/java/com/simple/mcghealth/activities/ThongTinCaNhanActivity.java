@@ -17,6 +17,7 @@ import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import com.simple.mcghealth.AppDatabase;
 import com.simple.mcghealth.R;
@@ -26,7 +27,6 @@ import com.simple.mcghealth.utils.CommonUtils;
 
 import java.text.ParseException;
 import java.util.Calendar;
-import java.util.jar.Attributes;
 
 public class ThongTinCaNhanActivity extends AppCompatActivity {
     private AppDatabase db;
@@ -48,6 +48,8 @@ public class ThongTinCaNhanActivity extends AppCompatActivity {
         ImageView btnChinhSua = (ImageView) findViewById(R.id.btnSua1);
         ImageView btnChinhSua2 = (ImageView) findViewById(R.id.btnSua2);
 
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        CommonUtils.actionToolbar(toolbar, this);
 
         Intent intent = getIntent();
         int IdUser = intent.getIntExtra("IdUser", -1);
@@ -185,7 +187,7 @@ public class ThongTinCaNhanActivity extends AppCompatActivity {
                     // Button luu
                     btnLuu.setOnClickListener(view1 -> {
                         String ttb = edtThongTinBenh.getText().toString().trim();
-                        String ts = edtTienSu.getText().toString().trim()  + "\n" + user.getDiseaseInfo() ;
+                        String ts = edtTienSu.getText().toString().trim() + "\n" + user.getDiseaseInfo();
 
 
                         //update ten va ngay sinh

@@ -1,147 +1,166 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#dfdfd3" android:layout_width="match_parent" android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dfdfd3"
+    android:orientation="vertical">
+
     <TextView
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:textColor="#fff"
-        android:gravity="center"
         android:id="@+id/textviewtenchedo"
-        android:background="#21a725"
-        android:paddingLeft="15dp"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:text="Chế độ ăn người béo phì"/>
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/main"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:text="Chế độ ăn người béo phì"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
     <ScrollView
-        android:scrollbars="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fillViewport="true">
+        android:fillViewport="true"
+        android:scrollbars="vertical">
+
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
             <LinearLayout
-                android:orientation="vertical"
-                android:background="#fff"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="vertical">
+
                 <TextView
-                    android:textSize="16sp"
-                    android:textStyle="italic"
-                    android:textColor="@color/black"
-                    android:gravity="center_vertical"
-                    android:background="@drawable/custom_onguyenta"
-                    android:padding="6dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginRight="5dp"
-                    android:text="Nên lựa chọn thực phẩm giầu protein như : thịt ít mỡ, tôm, cua, cá, giò nạc, sữa đậu nành, trứng, sữa bột tách bơ, sữa chua làm từ sữa gầy, đậu đỗ."/>
-                <TextView
-                    android:textSize="16sp"
-                    android:textStyle="italic"
-                    android:textColor="@color/black"
-                    android:gravity="center_vertical"
                     android:background="@drawable/custom_onguyenta"
+                    android:gravity="center_vertical"
                     android:padding="6dp"
+                    android:text="Nên lựa chọn thực phẩm giầu protein như : thịt ít mỡ, tôm, cua, cá, giò nạc, sữa đậu nành, trứng, sữa bột tách bơ, sữa chua làm từ sữa gầy, đậu đỗ."
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginRight="5dp"
-                    android:text="Nên sử dụng những glucid có nhiều chất xơ như: bánh mì đen, ngũ cốc nguyên hạt, khoai củ."/>
-                <TextView
-                    android:textSize="16sp"
-                    android:textStyle="italic"
-                    android:textColor="@color/black"
-                    android:gravity="center_vertical"
                     android:background="@drawable/custom_onguyenta"
+                    android:gravity="center_vertical"
                     android:padding="6dp"
+                    android:text="Nên sử dụng những glucid có nhiều chất xơ như: bánh mì đen, ngũ cốc nguyên hạt, khoai củ."
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginRight="5dp"
-                    android:text="Ăn đủ chất xơ: nạp đủ 20gr chất xơ mỗi ngày từ ngũ cốc nguyên hạt, trái cây và rau quả giúp bạn cảm thấy no lâu hơn. Lượng chất xơ càng tăng lên thì tổng lượng calo bạn cung cấp cho cơ thể giảm đi, chất xơ cũng giảm lượng đường trong máu, bớt lượng cholesterol xấu và ngăn ngừa ung thư ruột già."/>
-                <TextView
-                    android:textSize="16sp"
-                    android:textStyle="italic"
-                    android:textColor="@color/black"
-                    android:gravity="center_vertical"
                     android:background="@drawable/custom_onguyenta"
+                    android:gravity="center_vertical"
                     android:padding="6dp"
+                    android:text="Ăn đủ chất xơ: nạp đủ 20gr chất xơ mỗi ngày từ ngũ cốc nguyên hạt, trái cây và rau quả giúp bạn cảm thấy no lâu hơn. Lượng chất xơ càng tăng lên thì tổng lượng calo bạn cung cấp cho cơ thể giảm đi, chất xơ cũng giảm lượng đường trong máu, bớt lượng cholesterol xấu và ngăn ngừa ung thư ruột già."
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginRight="5dp"
-                    android:text="Nên cung cấp đủ vitamin và muối khoáng. Những người đang áp dụng chế độ ăn kiêng thường có khẩu phần ăn dưới 1.200 Kcal, chế độ ăn như vậy rất dễ bị thiếu hụt vitamin và khoáng chất cần thiết như canxi, sắt, vitamin E….Vì thế, nếu bạn đang áp dụng các chế độ ăn kiêng cần chú ý bổ sung thêm  vitamin và khoáng chất hàng ngày."/>
-                <TextView
-                    android:textSize="16sp"
-                    android:textStyle="italic"
-                    android:textColor="@color/black"
-                    android:gravity="center_vertical"
                     android:background="@drawable/custom_onguyenta"
+                    android:gravity="center_vertical"
                     android:padding="6dp"
+                    android:text="Nên cung cấp đủ vitamin và muối khoáng. Những người đang áp dụng chế độ ăn kiêng thường có khẩu phần ăn dưới 1.200 Kcal, chế độ ăn như vậy rất dễ bị thiếu hụt vitamin và khoáng chất cần thiết như canxi, sắt, vitamin E….Vì thế, nếu bạn đang áp dụng các chế độ ăn kiêng cần chú ý bổ sung thêm  vitamin và khoáng chất hàng ngày."
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginRight="5dp"
-                    android:text="Nên bổ sung rau xanh và quả chín 500g/ngày. Bạn có thể chế biến các món rau dưới dạng luộc, nấu canh, làm nộm, rau trộn xalát."/>
-                <TextView
-                    android:textSize="16sp"
-                    android:textStyle="italic"
-                    android:textColor="@color/black"
-                    android:gravity="center_vertical"
                     android:background="@drawable/custom_onguyenta"
+                    android:gravity="center_vertical"
                     android:padding="6dp"
+                    android:text="Nên bổ sung rau xanh và quả chín 500g/ngày. Bạn có thể chế biến các món rau dưới dạng luộc, nấu canh, làm nộm, rau trộn xalát."
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginRight="5dp"
-                    android:text="Thay đổi nguồn cung cấp protein: Protein giúp bạn no bụng lâu hơn, hãy lựa chọn các loại thực phẩm lành mạnh như cá, thịt gà trắng, cá loại đậu, rau cải xanh, rau ngót hay trái cây như dâu tằm, chanh leo để bổ dung protein thay cho các loại thịt đỏ như bò, lợn, cừu giúp bạn sớm có thân hình mảnh mai mà còn làm cho làn da giàu sức sống hơn rất nhiều."/>
-                <TextView
-                    android:textSize="16sp"
-                    android:textStyle="italic"
-                    android:textColor="@color/black"
-                    android:gravity="center_vertical"
                     android:background="@drawable/custom_onguyenta"
+                    android:gravity="center_vertical"
                     android:padding="6dp"
+                    android:text="Thay đổi nguồn cung cấp protein: Protein giúp bạn no bụng lâu hơn, hãy lựa chọn các loại thực phẩm lành mạnh như cá, thịt gà trắng, cá loại đậu, rau cải xanh, rau ngót hay trái cây như dâu tằm, chanh leo để bổ dung protein thay cho các loại thịt đỏ như bò, lợn, cừu giúp bạn sớm có thân hình mảnh mai mà còn làm cho làn da giàu sức sống hơn rất nhiều."
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginRight="5dp"
-                    android:text="Nên hạn chế ăn muối, chỉ nên dưới 6g/ngày, nếu có tăng huyết áp thì chỉ 2-4g/ngày."/>
-                <TextView
-                    android:textSize="16sp"
-                    android:textStyle="italic"
-                    android:textColor="@color/black"
-                    android:gravity="center_vertical"
                     android:background="@drawable/custom_onguyenta"
+                    android:gravity="center_vertical"
                     android:padding="6dp"
+                    android:text="Nên hạn chế ăn muối, chỉ nên dưới 6g/ngày, nếu có tăng huyết áp thì chỉ 2-4g/ngày."
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginRight="5dp"
-                    android:text="Người bệnh béo phì không nên ăn những thực phẩm nhiều chất béo(thịt mỡ, nước dùng thịt, bơ, thịt chân giò…), cholesterol(não, tim, gan, thận, lòng lợn), giàu năng lượng, đồ uống có chất kích thích…"/>
+                    android:background="@drawable/custom_onguyenta"
+                    android:gravity="center_vertical"
+                    android:padding="6dp"
+                    android:text="Người bệnh béo phì không nên ăn những thực phẩm nhiều chất béo(thịt mỡ, nước dùng thịt, bơ, thịt chân giò…), cholesterol(não, tim, gan, thận, lòng lợn), giàu năng lượng, đồ uống có chất kích thích…"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
                 <Button
-                    android:textColor="@color/black"
-                    android:layout_gravity="center"
                     android:id="@+id/buttongoiythucdon"
+                    android:layout_width="170dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="20dp"
                     android:background="@drawable/custom_goiythucdon"
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp"
-                    android:layout_width="170dp"
-                    android:layout_height="35dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="20dp"
                     android:text="Tham khảo Thực Đơn"
-                    android:textAllCaps="false"/>
+                    android:textAllCaps="false"
+                    android:textColor="@color/black" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
