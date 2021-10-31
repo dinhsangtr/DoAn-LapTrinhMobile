@@ -30,7 +30,7 @@ public interface WalkingStepDao {
     @Query("DELETE FROM WALKING_STEP ")
     void deleteAllWalking_Steps();
 
-    //@Transaction
+    @Transaction
     @Query("SELECT * FROM walking_step ORDER BY id DESC")
     List<WalkingStep> getAll();
 

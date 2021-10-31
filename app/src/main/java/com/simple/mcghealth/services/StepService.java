@@ -77,7 +77,7 @@ public class StepService extends Service implements SensorEventListener {
         switch (mStepSensorType) {
             case Sensor.TYPE_STEP_COUNTER:
                 int tempStep = (int) sensorEvent.values[0];
-                Log.d(TAG, "tempStep = " + tempStep);
+                Log.e(TAG, "tempStep = " + tempStep);
                 if (!mHasRecord) {
                     mHasRecord = true;
                     mHasStepCount = tempStep;
@@ -125,13 +125,11 @@ public class StepService extends Service implements SensorEventListener {
         if (countSensor != null) {
             mStepSensorType = Sensor.TYPE_STEP_COUNTER;
             Log.v(TAG, "Sensor.TYPE_STEP_COUNTER");
-            mSensorManager
-                    .registerListener(StepService.this, countSensor, SensorManager.SENSOR_DELAY_NORMAL);
+            mSensorManager.registerListener(StepService.this, countSensor, SensorManager.SENSOR_DELAY_NORMAL);
         } else if (detectorSensor != null) {
             mStepSensorType = Sensor.TYPE_STEP_DETECTOR;
             Log.v(TAG, "Sensor.TYPE_STEP_DETECTOR");
-            mSensorManager.registerListener(StepService.this, detectorSensor,
-                    SensorManager.SENSOR_DELAY_NORMAL);
+            mSensorManager.registerListener(StepService.this, detectorSensor, SensorManager.SENSOR_DELAY_NORMAL);
         } else {
             Log.v(TAG, "Count sensor not available!");
             addBasePedometerListener();
@@ -214,12 +212,13 @@ public class StepService extends Service implements SensorEventListener {
         return PendingIntent.getActivity(this, 1, new Intent(), flags);
     }
 
+    // getResources().getString(R.string.app_name)
     private void initNotification() {
         mBuilder = new NotificationCompat
                 .Builder(this, NotificationChannel.CHANNEL_ID2)
                 .setSmallIcon(R.mipmap.ic_launcher)
-                .setContentTitle(getResources().getString(R.string.app_name))
-                .setContentText("Số bước hôm nay " + mCurrentStep + " bước")
+                .setContentTitle("Số bước hôm nay " + mCurrentStep + " bước")
+                .setContentText(null)
                 .setPriority(Notification.PRIORITY_DEFAULT)
                 .setContentIntent(getDefaultIntent(Notification.FLAG_ONGOING_EVENT))
                 .setWhen(System.currentTimeMillis())
@@ -234,8 +233,8 @@ public class StepService extends Service implements SensorEventListener {
         Intent hangIntent = new Intent(this, WalkingStepActivity.class);
         PendingIntent hangPendingIntent = PendingIntent.getActivity(this, 0, hangIntent, PendingIntent.FLAG_CANCEL_CURRENT);
         Notification notification =
-                mBuilder.setContentTitle(getResources().getString(R.string.app_name))
-                        .setContentText("Số bước hôm nay " + mCurrentStep + " bước")
+                mBuilder.setContentTitle("Số bước hôm nay " + mCurrentStep + " bước")
+                        .setContentText(null)
                         .setWhen(System.currentTimeMillis())
                         .setContentIntent(hangPendingIntent)
                         .build();

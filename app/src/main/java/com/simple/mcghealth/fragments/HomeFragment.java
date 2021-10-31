@@ -4,7 +4,6 @@ import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.content.ComponentName;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.ServiceConnection;
 import android.os.Build;
@@ -24,7 +23,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AlertDialog;
 import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -116,6 +114,7 @@ public class HomeFragment extends Fragment {
             userAdapter.setData(listU);
         }
 
+        //Thêm
         btnAddUser.setOnClickListener(view1 -> {
             Intent intent = new Intent(getActivity(), AddInfoMainActivity.class);
             startActivity(intent);
@@ -159,7 +158,7 @@ public class HomeFragment extends Fragment {
 
         });
 
-
+/*
         //Reset step
         btnResetStep.setOnClickListener(view1 -> {
             AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
@@ -189,12 +188,12 @@ public class HomeFragment extends Fragment {
 
 
         });
-        /*
+
         lnWalkingStep.setOnClickListener(view1 -> {
             Intent intent = new Intent(getActivity(), WalkingStepActivity.class);
             startActivity(intent);
         });
-        */
+*/
 
         return mBinding.getRoot();
     }
@@ -226,9 +225,10 @@ public class HomeFragment extends Fragment {
         if (currentCounts < totalStepNum) {
             currentCounts = totalStepNum;
             //cap nhat lai db
+            /*
             appDatabase = AppDatabase.getInstance(getActivity().getApplicationContext());
             WalkingStep ws = appDatabase.walkingStepDao().getStep();
-            appDatabase.walkingStepDao().updateStep(ws.getId(), currentCounts);
+            appDatabase.walkingStepDao().updateStep(ws.getId(), currentCounts);*/
         }
         mBinding.curStep.setText(String.valueOf(currentCounts));
     }
