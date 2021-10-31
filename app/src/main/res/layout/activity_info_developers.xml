@@ -17,22 +17,39 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Title"
+            android:text="Thông tin nhà phát triễn"
             android:textSize="20sp"
             android:textStyle="bold" />
     </androidx.appcompat.widget.Toolbar>
 
-    <TextView
-        android:id="@+id/content"
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/toolbarAddDrug1"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/logo" />
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/toolbarAddDrug1"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="chạy bộ là"
+        android:layout_below="@+id/imgLogo"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        android:background="@drawable/custom_practice"
-        android:textSize="20dp"
-        android:textColor="@color/black"/>
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/custom_practice">
 
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgLogo"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/custom_practice"
+            android:text=" Trương Đình Sang -Team Leader \n Mai Trung Kiên - Developer\n Phan Thanh Tiến - Developer \n Phạm Văn  Châu - Developer \n"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+    </LinearLayout>
 </RelativeLayout>

@@ -25,6 +25,7 @@ import com.simple.mcghealth.activities.IntroFTActivity;
 import com.simple.mcghealth.activities.UserManualActivity;
 import com.simple.mcghealth.dao.BmiDao;
 import com.simple.mcghealth.entities.User;
+import com.simple.mcghealth.utils.MyPreferences;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -45,6 +46,7 @@ public class SettingFragment extends Fragment {
     private LinearLayout layout3;
     private LinearLayout layout4;
     private LinearLayout layout5;
+    private MyPreferences myPreferences;
 
 
     public SettingFragment() {
@@ -99,6 +101,8 @@ public class SettingFragment extends Fragment {
                             //appDatabase.walkingStepDao().deleteAllWalking_Steps();
                             appDatabase.userDao().deleteAllUser();
 
+                            myPreferences = new MyPreferences(getActivity());
+                            myPreferences.setFirstTimeLaunch(true);
                             Intent intent = new Intent(getActivity(), IntroFTActivity.class);
                             startActivity(intent);
                         }
