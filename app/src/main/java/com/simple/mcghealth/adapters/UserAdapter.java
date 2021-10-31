@@ -2,6 +2,7 @@ package com.simple.mcghealth.adapters;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.simple.mcghealth.AppDatabase;
 import com.simple.mcghealth.R;
+import com.simple.mcghealth.activities.ThongTinCaNhanActivity;
 import com.simple.mcghealth.entities.Bmi;
 import com.simple.mcghealth.entities.User;
 import com.simple.mcghealth.interfaces.ItemClickListener;
@@ -89,6 +91,13 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserViewWriter
                             .create()
                             .show();
                 } else {
+
+                    //truyenid
+                    Intent intent  = new Intent(activity, ThongTinCaNhanActivity.class);
+                    intent.putExtra("IdUser",user.getId());
+                    activity.startActivity(intent);
+                    //truyenid
+
 
 
                     Toast.makeText(activity, "click " + user.getFullName(), Toast.LENGTH_SHORT).show();

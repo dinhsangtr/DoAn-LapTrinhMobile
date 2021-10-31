@@ -7,8 +7,12 @@ public class MyPreferences {
     static SharedPreferences pref;
     static SharedPreferences.Editor editor;
 
+    //Name prefs
     private static final String SHARED_PREFERENCES_NAME = "my_pref";
+
+    //Key
     private static final String IS_FIRST_TIME_LAUNCH = "is_first_launch";
+    private static final String WALKING_STEP = "walking_step";
 
 
     public MyPreferences(Context context) {
@@ -26,7 +30,8 @@ public class MyPreferences {
         return pref.getBoolean(IS_FIRST_TIME_LAUNCH, true);
     }
 
-    //
+
+    //Walking Step
 
 
 

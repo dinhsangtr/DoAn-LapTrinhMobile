@@ -36,7 +36,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginStart="3dp"
         android:layout_marginEnd="3dp"
-        android:text="Chạy bộ là môn thể thao được rất nhiều người luyện tập, nhưng không phải ai cũng biết hết những lợi ích quý hơn vàng mà thói quen tập chạy buổi sáng mang lại. Không chỉ giúp cho bạn có được một sức khỏe bền bỉ, một vóc dáng cân đối mà còn đẩy lùi một số chứng bệnh, có được tinh thần thoải mái và năng lượng tràn đầy trước khi bắt đầu một ngày mới. Dưới đây là 7 tác dụng của chạy bộ buổi sáng."
+        android:text="Chạy bộ là môn thể thao được rất nhiều người luyện tập, nhưng không phải ai cũng biết hết những lợi ích quý hơn vàng mà thói quen tập chạy buổi sáng mang lại. Không chỉ giúp cho bạn có được một sức khỏe bền bỉ, một vóc dáng cân đối mà còn đẩy lùi một số chứng bệnh, có được tinh thần thoải mái và năng lượng tràn đầy trước khi bắt đầu một ngày mới."
         android:textSize="18dp"
         android:textStyle="bold"
         android:textColor="@color/black"

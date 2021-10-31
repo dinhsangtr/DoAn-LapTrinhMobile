@@ -37,10 +37,9 @@
         android:layout_marginTop="10dp"
         android:layout_marginStart="3dp"
         android:layout_marginEnd="3dp"
-        android:text="Nhà báo kỳ cựu chuyên về công nghệ, David Pogue, đã tiến hành một đánh giá rộng rãi nhất về các ứng dụng nhắc nhở việc uống thuốc. Sau khi kiểm tra 47 ứng dụng khác nhau, ông nghĩ MediSafe là lựa chọn tốt nhất.
-MediSafe làm mọi thứ đúng cách. Nó rất dễ sử dụng và thiết lập. Bạn cũng có thể thêm hình dạng và màu sắc của viên thuốc, cũng như nhận lời nhắc uống loại thuốc đó vào đúng thời điểm. Bạn thậm chí có thể cài đặt báo lại lời nhắc sau một giờ, trong trường hợp bạn không thể uống thuốc vào thời điểm chính xác trong lời nhắc.
-Nhưng phần tốt nhất của MediSafe là nó cho phép bạn thêm người phụ thuộc và liều lượng thuốc của họ. Vì vậy, nếu những người thân yêu của bạn hay quên uống thuốc đúng giờ, hãy tạo ra một profile cho họ và thêm lịch trình của họ vào. Bạn thậm chí có thể cài đặt MediSafe trên điện thoại của họ và liên kết cả hai ứng dụng (của bạn và của người thân), để bạn có thể thiết lập lời nhắc và kích hoạt trên cả hai điện thoại.
-Một số tính năng của MediSafe chỉ có sẵn trong phiên bản cao cấp, và nếu bạn chịu trách nhiệm về việc uống thuốc cho cả gia đình, điều đó sẽ rất đáng giá. Nhưng dù sao, hãy thử phiên bản miễn phí trước đã.
+        android:text="MCG Health làm mọi thứ đúng cách. Nó rất dễ sử dụng và thiết lập. Bạn cũng có thể thêm hình dạng và màu sắc của viên thuốc, cũng như nhận lời nhắc uống loại thuốc đó vào đúng thời điểm. Bạn thậm chí có thể cài đặt báo lại lời nhắc sau một giờ, trong trường hợp bạn không thể uống thuốc vào thời điểm chính xác trong lời nhắc.
+Nhưng phần tốt nhất của MCG Health là nó cho phép bạn thêm người phụ thuộc và liều lượng thuốc của họ. Vì vậy, nếu những người thân yêu của bạn hay quên uống thuốc đúng giờ, hãy tạo ra một profile cho họ và thêm lịch trình của họ vào. Bạn thậm chí có thể cài đặt MediSafe trên điện thoại của họ và liên kết cả hai ứng dụng (của bạn và của người thân), để bạn có thể thiết lập lời nhắc và kích hoạt trên cả hai điện thoại.
+Một số tính năng của MCG Health chỉ có sẵn trong phiên bản cao cấp, và nếu bạn chịu trách nhiệm về việc uống thuốc cho cả gia đình, điều đó sẽ rất đáng giá. Nhưng dù sao, hãy thử phiên bản miễn phí trước đã.
 "
         android:textSize="16dp"
         android:textStyle="bold"
